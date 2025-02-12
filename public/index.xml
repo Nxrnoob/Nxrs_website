@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nxr&#39;s Website on Nxrnoob</title>
+    <link>http://192.168.6.57:1313/</link>
+    <description>Recent content in Nxr&#39;s Website on Nxrnoob</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://192.168.6.57:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>fifth</title>
+      <link>http://192.168.6.57:1313/posts/fifth/</link>
+      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://192.168.6.57:1313/posts/fifth/</guid>
+      <description>&lt;h1 id=&#34;the-with-third-post&#34;&gt;the with third post&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>sixthgain</title>
+      <link>http://192.168.6.57:1313/posts/sixth/</link>
+      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://192.168.6.57:1313/posts/sixth/</guid>
+      <description>&lt;h1 id=&#34;sixth-third-post&#34;&gt;sixth third post&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>tesagain</title>
+      <link>http://192.168.6.57:1313/posts/fourth/</link>
+      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://192.168.6.57:1313/posts/fourth/</guid>
+      <description>&lt;h1 id=&#34;testing-fourth-again-the-with-third-post&#34;&gt;testing fourth again the with third post&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>testingagain</title>
+      <link>http://192.168.6.57:1313/posts/thirdpost/</link>
+      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://192.168.6.57:1313/posts/thirdpost/</guid>
+      <description>&lt;h1 id=&#34;testing-again-the-with-third-post&#34;&gt;testing again the with third post&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>tiehthngagain</title>
+      <link>http://192.168.6.57:1313/posts/seventh/</link>
+      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://192.168.6.57:1313/posts/seventh/</guid>
+      <description>&lt;h1 id=&#34;testin-therd-post&#34;&gt;testin therd post&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>Testing1</title>
+      <link>http://192.168.6.57:1313/posts/hello/</link>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://192.168.6.57:1313/posts/hello/</guid>
+      <description>&lt;p&gt;This is a testing blog post&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>hello</title>
+      <link>http://192.168.6.57:1313/posts/first-post/</link>
+      <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://192.168.6.57:1313/posts/first-post/</guid>
+      <description>&lt;p&gt;This is a testing post or some shit idk&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nothing</title>
+      <link>http://192.168.6.57:1313/projects/nope/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://192.168.6.57:1313/projects/nope/</guid>
+      <description>&lt;p&gt;#Ill post it soon :)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
