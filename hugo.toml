@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'Nxrnoob'
 theme = 'gokarna-hugo'
 [params]
-  description = "Hey there , welcome to my digital realm!" # <-- Add your description text
+  description = "Hey there , Welcome to my digital realm! " # <-- Add your description text
   showPostsOnHomePage = "recent"
   numberPostsOnHomePage = 5
   avatarURL = "/images/avatar.webp"
