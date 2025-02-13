@@ -18,7 +18,7 @@ I love *touching* my laptop (technically i swear) , pursuing CS degree , and now
 
 -> I might OD on caffeine
 
--> I Wear specs 
+-> I wear specs -0-0- 
 
 -> I Have great music taste
 

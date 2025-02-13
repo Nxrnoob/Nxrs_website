@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nxr&#39;s Website on Nxrnoob</title>
-    <link>http://localhost:1313/</link>
+    <link>https://nxrnoob.com/</link>
     <description>Recent content in Nxr&#39;s Website on Nxrnoob</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 13 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nxrnoob.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Soon :)</title>
-      <link>http://localhost:1313/projects/nope/</link>
+      <link>https://nxrnoob.com/projects/nope/</link>
       <pubDate>Thu, 13 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/nope/</guid>
+      <guid>https://nxrnoob.com/projects/nope/</guid>
       <description>&lt;p&gt;#Ill post it soon :)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Click ME !</title>
-      <link>http://localhost:1313/posts/first-post/</link>
+      <link>https://nxrnoob.com/posts/first-post/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/first-post/</guid>
+      <guid>https://nxrnoob.com/posts/first-post/</guid>
       <description>&lt;p&gt;Thanks for visiting my site , stay tuned to see the upcoming posts ^_^&#xA;It wil soon turn from an about me page to an awesome informative hub i promise.&lt;/p&gt;</description>
     </item>
   </channel>
