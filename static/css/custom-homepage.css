@@ -1,0 +1,134 @@
+/* General Styles - Applied to Desktop (and Mobile unless overridden) */
+.homepage-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.homepage-left-column {
+    flex: 7;
+    padding-right: 20px;
+}
+
+.homepage-right-column {
+    flex: 3;
+    padding-left: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-left: 1px solid #ccc; /* Light mode vertical separator line */
+}
+
+/* Recent Posts Box - Box Style for DESKTOP - Light Mode (Accent Color Border) */
+body .home-posts.list-posts {
+    padding: 20px;
+    border: 2px solid #cc00ff; /* Box border in ACCENT COLOR for DESKTOP */
+    border-radius: 5px;
+    background-color: transparent;
+    margin-left: auto;  /* Center the box horizontally */
+    margin-right: auto; /* Center the box horizontally */
+    width: 90%;       /* Ensure the box is centered with a slight margin on both sides */
+}
+
+body .home-posts h2 {
+    /* NO Underline in DESKTOP */
+    border-bottom: none;
+    padding-bottom: 0;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+    .homepage-right-column {
+        border-left-color: #555; /* Dark mode vertical separator line */
+    }
+
+    /* Recent Posts Box - Box Style for DESKTOP - Dark Mode (Accent Color Border) */
+    .home-posts.list-posts {
+        padding: 20px;
+        border: 2px solid #cc00ff; /* Box border in ACCENT COLOR for DESKTOP */
+        border-radius: 5px;
+        background-color: transparent;
+    }
+
+    .home-posts h2 {
+        /* NO Underline in DESKTOP */
+        border-bottom: none;
+        padding-bottom: 0;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Basic List Styling - Remove default bullet points and padding */
+.home-posts ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 0;      /* Reset default padding for ul */
+}
+
+
+/* Mobile View Adjustments - Screen width up to 820px - LAYOUT & BOX SIZE */
+@media only screen and (max-width: 820px) {
+
+    .homepage-container {
+        display: block !important; /* Stack columns vertically on mobile */
+        text-align: center;        /* Center content on mobile */
+    }
+
+    .homepage-right-column {
+        width: 100%;
+        margin-top: 20px;
+        padding-left: 0;
+        padding-right: 0;
+        border-left: none !important; /* Remove vertical separator line on mobile */
+        border-top: none !important;  /* No horizontal line */
+        padding-top: 0;              /* No extra padding */
+        display: block;              /* Revert to block display, remove flexbox */
+        align-items: initial;        /* Revert align-items */
+    }
+
+    .homepage-left-column {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .home-posts {
+        width: 100%;
+        max-width: 90%;         /* Slightly reduced max-width to better center in mobile */
+        padding: 20px;             /* Keep padding for mobile box */
+        margin-left: auto;          /* Explicit margin-left: auto for centering */
+        margin-right: auto;         /* Explicit margin-right: auto for centering */
+        overflow-x: hidden;
+        box-sizing: border-box;
+        border: 2px solid #cc00ff; /* Added border back in mobile mode */
+        border-radius: 5px;
+        text-align: left;         /* Revert text align to left for content within mobile box */
+        background-color: transparent;
+    }
+
+    .home-posts h2 {
+        font-size: 1.5em;          /* Slightly larger heading in mobile */
+        text-align: center;         /* Center heading in mobile */
+        border-bottom: 5px solid #cc00ff; /* ACCENT COLOR UNDERLINE for MOBILE - Thicker */
+        padding-bottom: 8px;           /* Add padding below underline */
+        display: inline-block;       /* Make underline fit text width */
+        margin-bottom: 30px;          /* Add more space below heading/underline */
+    }
+
+    .home-posts .list-posts {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+    }
+
+    /* REMOVE separator lines BETWEEN posts in mobile - NO LONGER NEEDED */
+    .home-posts .post-title + .post-title {
+        border-top: none !important; /* REMOVED */
+    }
+}

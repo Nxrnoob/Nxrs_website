@@ -1,0 +1,75 @@
+{{ define "main" }}
+
+<div class="homepage-container">
+    <div class="homepage-left-column">
+        <section class="home-about">
+            <div class="avatar">
+                {{ if isset .Site.Params "avatarurl" }}
+                <img class={{ .Site.Params.AvatarSize | default "size-m" }} src='{{ .Scratch.Get "avatarImgSrc" }}' alt="{{ .Site.Params.AvatarAltText|default "avatar" }}">
+                {{ end }}
+            </div>
+
+            <h1>{{ .Site.Title }}</h1>
+            {{ if isset .Site.Params "description" }}
+            <h2>{{ .Site.Params.Description }}</h2>
+            {{ end }}
+        </section>
+
+        <div class="flex-break"></div>
+
+
+        {{ if (or
+            (and (fileExists "content/_index.md") .Content)
+            (fileExists "content/index-about.md")) }}
+        <section class="home-content">
+            {{ or .Content (readFile "index-about.md" | markdownify) }}
+        </section>
+        {{ end }}
+    </div>
+
+    <div class="homepage-right-column">
+        {{ if isset .Site.Params "showpostsonhomepage" }}
+        <div class="home-posts list-posts">
+            <h2>{{ i18n (.Site.Params.ShowPostsOnHomePage | humanize) }}</h2>
+            {{ $posts := where .Site.Pages "Params.type" "post" }}
+            {{ if eq .Site.Params.ShowPostsOnHomePage "popular" }}
+                {{ range $posts.ByWeight | first (or .Site.Params.NumberPostsOnHomePage 4) }}
+                    {{- partial "list-posts.html" . -}}
+                {{ end }}
+            {{ else if eq .Site.Params.ShowPostsOnHomePage "recent" }}
+                {{ range $posts.ByDate.Reverse | first (or .Site.Params.NumberPostsOnHomePage 4) }}
+                    {{- partial "list-posts.html" . -}}
+                {{ end }}
+            {{ end }}
+                </div>
+        {{ end }}
+
+        {{/*  --- SOCIAL ICONS MOVED HERE ---  */}}
+        {{ if isset .Site.Params "socialicons" }}
+        <div class="gk-social-icons">
+            <ul class="gk-social-icons-list">
+                {{ range .Site.Params.SocialIcons }}
+                <li class="gk-social-icon">
+                    <a href="{{ .url }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} aria-label="Learn more on {{ .name }}">
+                        <img class="svg-inject" src="{{ relURL "svg/icons/" }}{{ .name | lower }}.svg" alt="">
+                    </a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+        {{ end }}
+        {{/*  --- SOCIAL ICONS MOVED - END ---  */}}
+
+        {{/* --- Cbox Chatbox Section with Name --- */}}
+        <section class="homepage-section cbox-section">
+            <h2>Talktuah</h2>  {{/* --- Chatbox Name Heading - ADDED HERE --- */}}
+            <div id="cbox-container">
+                <iframe src="https://www5.cbox.ws/box/?boxid=955416&boxtag=ra1KPJ" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+            </div>
+        </section>
+        {{/* --- Cbox Chatbox Section with Name - End --- */}}
+
+    </div>
+</div>
+
+{{ end }}

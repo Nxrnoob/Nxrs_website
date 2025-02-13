@@ -1,0 +1,46 @@
+baseURL = "https://Nxrnoob.github.io/"
+languageCode = 'en-us'
+title = 'Nxrnoob'
+theme = 'gokarna-hugo'
+[params]
+  description = "Hey there , welcome to my digital realm!" # <-- Add your description text
+  showPostsOnHomePage = "recent"
+  numberPostsOnHomePage = 5
+  avatarURL = "/images/avatar.webp"
+  accentColor = "#cc00ff"
+  [[params.socialIcons]]
+    name = "instagram" # Icon name (e.g., "twitter", "github", "linkedin", "instagram", "email", "rss")
+    url = "https://instagram.com/nxrnoob/"
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/Nxrnoob/"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/subash-gs-7841392a1/"
+  [[params.socialIcons]]
+    name = "telegram"
+    url = "https://t.me/Nxrnoob"
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:nxrnoob@protonmail.com"
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Projects" # <-- Add "Projects" link
+    url = "/projects/" # <-- You might need to create a content/projects section later
+    weight = 3
+
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 4
+
