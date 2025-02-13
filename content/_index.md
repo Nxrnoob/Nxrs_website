@@ -5,8 +5,8 @@ title = "Nxr's Website"
 
 ![Hellopic](images/hello.png)
 
-I am Subash and i go with the name Nxrnoob in digital realm . I am a 20 yo guy from india .
-I love *touching* my laptop (technically ofc) , pursuing CS degree , and Now i am Web Landlord too.
+I am Subash and i go by the name Nxrnoob in digital realm . I am a 20 yung guy from india .
+I love *touching* my laptop (technically i swear) , pursuing CS degree , and now i am Web Landlord too.
 
 ---
 
@@ -14,11 +14,18 @@ I love *touching* my laptop (technically ofc) , pursuing CS degree , and Now i a
 
 ---
 ## About the Beauty Behind This Madness:
-- I love linux and WMs
-- I might OD on caffeine
-- I Wear specs 
-- I Have great music taste
-- I have Cringe intolarance
-- I read books
-- I enjoy workin out (physically & mentally)
-- +69 aura
+->I love linux and computers
+
+-> I might OD on caffeine
+
+-> I Wear specs 
+
+-> I Have great music taste
+
+-> I have Cringe intolarance
+
+-> I read books
+
+-> I enjoy workin out (physically & mentally)
+
+-> +69 aura

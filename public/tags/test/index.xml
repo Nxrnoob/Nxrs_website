@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Test on Nxrnoob</title>
-    <link>https://nxrnoob.com/tags/test/</link>
+    <link>http://localhost:1313/tags/test/</link>
     <description>Recent content in Test on Nxrnoob</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 10 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://nxrnoob.com/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/test/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>hello</title>
-      <link>https://nxrnoob.com/posts/first-post/</link>
+      <link>http://localhost:1313/posts/first-post/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://nxrnoob.com/posts/first-post/</guid>
+      <guid>http://localhost:1313/posts/first-post/</guid>
       <description>&lt;p&gt;This is a testing post or some shit idk&lt;/p&gt;</description>
     </item>
   </channel>

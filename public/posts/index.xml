@@ -2,60 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Nxrnoob</title>
-    <link>https://nxrnoob.com/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Nxrnoob</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://nxrnoob.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>fifth</title>
-      <link>https://nxrnoob.com/posts/fifth/</link>
-      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://nxrnoob.com/posts/fifth/</guid>
-      <description>&lt;h1 id=&#34;the-with-third-post&#34;&gt;the with third post&lt;/h1&gt;</description>
-    </item>
-    <item>
-      <title>sixthgain</title>
-      <link>https://nxrnoob.com/posts/sixth/</link>
-      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://nxrnoob.com/posts/sixth/</guid>
-      <description>&lt;h1 id=&#34;sixth-third-post&#34;&gt;sixth third post&lt;/h1&gt;</description>
-    </item>
-    <item>
-      <title>tesagain</title>
-      <link>https://nxrnoob.com/posts/fourth/</link>
-      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://nxrnoob.com/posts/fourth/</guid>
-      <description>&lt;h1 id=&#34;testing-fourth-again-the-with-third-post&#34;&gt;testing fourth again the with third post&lt;/h1&gt;</description>
-    </item>
-    <item>
-      <title>testingagain</title>
-      <link>https://nxrnoob.com/posts/thirdpost/</link>
-      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://nxrnoob.com/posts/thirdpost/</guid>
-      <description>&lt;h1 id=&#34;testing-again-the-with-third-post&#34;&gt;testing again the with third post&lt;/h1&gt;</description>
-    </item>
-    <item>
-      <title>tiehthngagain</title>
-      <link>https://nxrnoob.com/posts/seventh/</link>
-      <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://nxrnoob.com/posts/seventh/</guid>
-      <description>&lt;h1 id=&#34;testin-therd-post&#34;&gt;testin therd post&lt;/h1&gt;</description>
-    </item>
-    <item>
-      <title>Testing1</title>
-      <link>https://nxrnoob.com/posts/hello/</link>
-      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://nxrnoob.com/posts/hello/</guid>
-      <description>&lt;p&gt;This is a testing blog post&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>hello</title>
-      <link>https://nxrnoob.com/posts/first-post/</link>
+      <title>Click ME !</title>
+      <link>http://localhost:1313/posts/first-post/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://nxrnoob.com/posts/first-post/</guid>
-      <description>&lt;p&gt;This is a testing post or some shit idk&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/first-post/</guid>
+      <description>&lt;p&gt;Thanks for visiting my site , stay tuned to see the upcoming posts ^_^&#xA;It wil soon turn from an about me page to an awesome informative hub i promise.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

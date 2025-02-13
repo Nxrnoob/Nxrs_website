@@ -6,7 +6,7 @@ theme = 'gokarna-hugo'
   description = "Hey there , Welcome to my digital realm! " # <-- Add your description text
   showPostsOnHomePage = "recent"
   numberPostsOnHomePage = 5
-  avatarURL = "/images/avatar.webp"
+  avatarURL = "/images/avatar.jpg"
   accentColor = "#cc00ff"
   [[params.socialIcons]]
     name = "instagram" # Icon name (e.g., "twitter", "github", "linkedin", "instagram", "email", "rss")

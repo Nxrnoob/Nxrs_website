@@ -1,39 +1,38 @@
 <footer class="footer">
-    <!-- Option for user to inject custom html -->
-    {{ if .Site.Params.CustomFooterHTML }}
-    {{ .Site.Params.CustomFooterHTML | safeHTML }}
+  {{ if .Site.Params.CustomFooterHTML }}
+  {{ .Site.Params.CustomFooterHTML | safeHTML }}
+  {{ end }}
+
+  {{ .Scratch.Set "footerText" "" }}
+
+  {{ if (.Site.Params.Footer) }}
+
+    {{ if and (eq .Kind "page") (.Date) }}
+      {{ .Scratch.Add "footerText" (.Date | time.Format "2006") }}
+    {{ else }}
+      {{ .Scratch.Add "footerText" (time.Now | time.Format "2006") }}
     {{ end }}
 
-    {{ .Scratch.Set "footerText" "" }}
-
-    {{ if (.Site.Params.Footer) }}
-
-        {{ if and (eq .Kind "page") (.Date) }}
-            {{ .Scratch.Add "footerText" (.Date | time.Format "2006") }}
-        {{ else }}
-            {{ .Scratch.Add "footerText" (time.Now | time.Format "2006") }}
-        {{ end }}
-
-        {{ if and (eq .Kind "page") (.Lastmod) (gt (time.Format "2006" .Lastmod) (time.Format "2006" .Date)) }}
-            {{ .Scratch.Add "footerText" "-" }}
-            {{ .Scratch.Add "footerText" (.Lastmod | time.Format "2006") }}
-        {{ end }}
-
-        {{ .Scratch.Add "footerText" " " }}
-        {{ .Scratch.Add "footerText" .Site.Params.Footer }}
-
-        {{ if and (eq .Kind "page") (.Site.Copyright) }}
-            {{ .Scratch.Add "footerText" " " }}
-            {{ .Scratch.Add "footerText" .Site.Copyright }}
-        {{ end }}
-
+    {{ if and (eq .Kind "page") (.Lastmod) (gt (time.Format "2006" .Lastmod) (time.Format "2006" .Date)) }}
+      {{ .Scratch.Add "footerText" "-" }}
+      {{ .Scratch.Add "footerText" (.Lastmod | time.Format "2006") }}
     {{ end }}
 
-    {{ if (gt (.Scratch.Get "footerText" | len) 0) }}
-        <span>&copy; {{ .Scratch.Get "footerText" | markdownify }}</span>
+    {{ .Scratch.Add "footerText" " " }}
+    {{ .Scratch.Add "footerText" .Site.Params.Footer }}
+
+    {{ if and (eq .Kind "page") (.Site.Copyright) }}
+      {{ .Scratch.Add "footerText" " " }}
+      {{ .Scratch.Add "footerText" .Site.Copyright }}
     {{ end }}
 
-    <span>
-        Hello <a href="https://github.com/Nxrnoob/">Nxrnoob</a>
-    </span>
+  {{ end }}
+
+  {{ if (gt (.Scratch.Get "footerText" | len) 0) }}
+    <span>&copy; {{ .Scratch.Get "footerText" | markdownify }}</span>
+  {{ end }}
+
+  <p>
+    <small>&copy; {{ now.Year }} Nxrnoob. Made with ❤️ using <a href="https://github.com/gokarna-theme/gokarna-hugo" target="_blank" rel="noopener">Gokarna</a></small>
+  </p>
 </footer>
