@@ -22,7 +22,7 @@ I love *touching* my laptop (technically i swear) , pursuing CS degree , and now
 
 -> I Have great music taste
 
--> I have Cringe intolarance
+-> I have Cringe intolerance
 
 -> I read books
 
