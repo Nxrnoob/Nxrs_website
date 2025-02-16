@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #cc00ff;
+            --font-size: 17.5px;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Github OSINT repo scraper</title>
+    <meta name="description" content="GitHub-OSINT-Repository-Scraper A powerful OSINT (Open-Source Intelligence) tool to scrape GitHub repositories based on specific keywords, sort them by stars, …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="https://nxrnoob.com/projects/gitaiscrap/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Github OSINT repo scraper">
+    <meta property="og:description" content="GitHub-OSINT-Repository-Scraper A powerful OSINT (Open-Source Intelligence) tool to scrape GitHub repositories based on specific keywords, sort them by stars, …">
+    <meta property="og:image" content="https://nxrnoob.com/images/avatar.jpeg">
+    <meta property="og:image:secure_url" content="https://nxrnoob.com/images/avatar.jpeg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Github OSINT repo scraper">
+    <meta name="twitter:description" content="GitHub-OSINT-Repository-Scraper A powerful OSINT (Open-Source Intelligence) tool to scrape GitHub repositories based on specific keywords, sort them by stars, …">
+    <meta property="twitter:domain" content="https://nxrnoob.com/projects/gitaiscrap/">
+    <meta property="twitter:url" content="https://nxrnoob.com/projects/gitaiscrap/">
+    <meta name="twitter:image" content="https://nxrnoob.com/images/avatar.jpeg">
+
+    
+    <link rel="canonical" href="https://nxrnoob.com/projects/gitaiscrap/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.275fedb6f364c8865658bae576d82b514ace973f6a13ed63503a85b20c697453.js" integrity="sha256-J1/ttvNkyIZWWLrldtgrUUrOlz9qE&#43;1jUDqFsgxpdFM="></script>
+
+    
+    
+    <link rel="stylesheet" href="/css/custom-homepage.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://nxrnoob.com/">
+                <img src='/images/avatar.jpeg' alt="avatar">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://nxrnoob.com/">Nxrnoob</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://nxrnoob.com/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://nxrnoob.com/posts/" aria-label="" > Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://nxrnoob.com/projects/" aria-label="" > Projects </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://nxrnoob.com/tags/" aria-label="" > Tags </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://nxrnoob.com/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://nxrnoob.com/posts/" > Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://nxrnoob.com/projects/" > Projects </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://nxrnoob.com/tags/" > Tags </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    
+
+    <div class="post container">
+
+    <div class="post-header-section">
+        <h1>Github OSINT repo scraper</h1>
+    </div>
+
+    <div class="post-content">
+        <h1 id="github-osint-repository-scraper">GitHub-OSINT-Repository-Scraper</h1>
+<p>A powerful OSINT (Open-Source Intelligence) tool to scrape GitHub repositories based on specific keywords, sort them by stars, and filter them by programming language. This tool allows easy exploration of top repositories and opens them in a browser directly from the terminal. By default it analyze trends in AI/ML and can be configured by editing the gitai.py .</p>
+<h2 id="features">Features</h2>
+<ul>
+<li><strong>GitHub API Integration:</strong> Fetches repositories using GitHub&rsquo;s API.</li>
+<li><strong>CSV Data Export:</strong> Saves raw data in <code>github_repos.csv</code> and cleans it in <code>github_repos_cleaned.csv</code>.</li>
+<li><strong>Language Categorization:</strong> Groups repositories by programming language. Repositories with no language specified are automatically classified under &ldquo;Miscellaneous.&rdquo;</li>
+<li><strong>Interactive Menu:</strong> Browse repositories by selecting a programming language, view the list of repositories, and open any repository directly in your browser.</li>
+<li><strong>OSINT Research:</strong> Perfect for researchers and tech scouts looking to analyze trends in AI/ML projects on GitHub.</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Clone the repository</span>
+</span></span><span style="display:flex;"><span>git clone https://github.com/Nxrnoob/GitHub-OSINT-Repository-Scraper.git
+</span></span><span style="display:flex;"><span>cd GitHub-OSINT-Repository-Scraper
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create a virtual environment (not necessary but recommended)</span>
+</span></span><span style="display:flex;"><span>python -m venv venv
+</span></span><span style="display:flex;"><span>source venv/bin/activate  <span style="color:#75715e"># Linux/macOS</span>
+</span></span><span style="display:flex;"><span>venv<span style="color:#ae81ff">\S</span>cripts<span style="color:#ae81ff">\a</span>ctivate    <span style="color:#75715e"># Windows</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Install dependencies</span>
+</span></span><span style="display:flex;"><span>pip install requests
+</span></span></code></pre></div><p>Configure Your GitHub API Key</p>
+<p>The tool requires a GitHub API Key for fetching repositories.
+Get Your GitHub API Key:</p>
+<pre><code>Go to GitHub Developer Settings.
+Generate a new token (classic) with repo read access.
+Copy the token and replace &quot;YOUR_GITHUB_API_KEY&quot; in gitai.py:
+</code></pre>
+<h2 id="usage">Usage</h2>
+<p>Simply run using:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python gitai.py
+</span></span></code></pre></div><p>The tool will:</p>
+<ul>
+<li>Fetch GitHub repositories based on your query.</li>
+<li>Save the results to CSV files.</li>
+<li>Display an interactive menu for browsing repositories by programming language.</li>
+<li>Allow you to open any selected repository in your default web browser.</li>
+</ul>
+<h2 id="demo-image">Demo image</h2>
+<p><img src="/images/gos.png" alt="demo"></p>
+
+    </div>
+    
+    
+</div>
+
+
+
+
+        </main><footer class="footer">
+  
+
+  
+
+  
+
+  
+
+  <p>
+    <small>&copy; 2025 Nxrnoob. Made with ❤️ using <a href="https://github.com/gokarna-theme/gokarna-hugo" target="_blank" rel="noopener">Gokarna</a></small>
+  </p>
+</footer>
+</body>
+</html>
