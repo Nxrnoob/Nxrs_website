@@ -29,3 +29,8 @@ I love *touching* my laptop (technically i swear) , pursuing CS degree , and now
 -> I enjoy workin out (physically & mentally)
 
 -> +69 aura
+
+![darling](images/zerotwo.png)
+   Watchu lookin at huh ?
+
+---
