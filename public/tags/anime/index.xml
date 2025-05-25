@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Anime on Nxrnoob</title>
-    <link>https://nxrnoob.com/tags/anime/</link>
+    <link>http://localhost:1313/tags/anime/</link>
     <description>Recent content in Anime on Nxrnoob</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 10 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://nxrnoob.com/tags/anime/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/anime/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Anime the Frames of Emotion</title>
-      <link>https://nxrnoob.com/posts/anime-the-frames-of-emotion/</link>
+      <link>http://localhost:1313/posts/anime-the-frames-of-emotion/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://nxrnoob.com/posts/anime-the-frames-of-emotion/</guid>
+      <guid>http://localhost:1313/posts/anime-the-frames-of-emotion/</guid>
       <description>&lt;p&gt;Okay let&amp;rsquo;s talk about anime , even if anime is not ur cup of &lt;del&gt;tea&lt;/del&gt; coffee , pretend it is , just like when you fake interest around your relatives.&lt;/p&gt;&#xA;&lt;p&gt;So Anime ,  what a wonder full piece of content ever created , iam not gonna glaze the anime but imma say my view of it , so get comfortable and read it.&lt;/p&gt;&#xA;&lt;p&gt;lets start from how i got into it and y i like it , One random day i was walking in the terrace in a breezy night surfing the web in boredom and found a app in this sort of page that i dont remember and installed it.&lt;/p&gt;</description>
     </item>
   </channel>
