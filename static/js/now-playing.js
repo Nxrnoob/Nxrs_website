@@ -5,13 +5,19 @@ async function fetchNowPlaying() {
 
     const container = document.getElementById("spotify-now-playing");
 
+    // Clear the container each time
+    container.innerHTML = "";
+
     if (data.error || !data.is_playing) {
-      container.innerHTML = `<p>Not listening anything right now 🎧</p>`;
+      container.innerHTML = `<p>Not playing anything right now 🎧</p>`;
       return;
     }
 
     const html = `
-      <h3 class="now-playing-heading">Currently listening to 🎶</h3>
+      <div class="now-playing-label">🎶 Currently Listening To
+      <span class="equalizer">
+    <span></span><span></span><span></span><span></span><span></span>
+  </span></div>
       <div class="spotify-card">
         <img src="${data.album_image_url}" alt="Album Art" class="album-art" />
         <div class="track-info">
@@ -21,6 +27,7 @@ async function fetchNowPlaying() {
         </div>
       </div>
     `;
+
     container.innerHTML = html;
   } catch (error) {
     console.error("🚨 Error fetching now playing data:", error);
@@ -28,9 +35,9 @@ async function fetchNowPlaying() {
   }
 }
 
-// Run immediately
+// Run on page load and every 15 seconds
 window.addEventListener("DOMContentLoaded", () => {
   fetchNowPlaying();
-  setInterval(fetchNowPlaying, 5000); // 🔁 fetch every 15 seconds
+  setInterval(fetchNowPlaying, 5000); // every 15 sec
 });
 

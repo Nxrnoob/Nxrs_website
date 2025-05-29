@@ -58,12 +58,9 @@
         </div>
         {{ end }}
 
-        {{/* --- NOW PLAYING SECTION (NEW) --- */}}
-        <section id="spotify-now-playing" style="text-align:center; margin: 1rem 0;">
-            <div id="song-info">
-                <p>Loading current song...</p>
-		<h2 id="now-playing-heading" style="display: none;">🎶 Currently listening to</h2>
-            </div>
+        {{/* --- NOW PLAYING SECTION: Tokyo Neon Night Widget --- */}}
+        <section id="spotify-now-playing" class="spotify-widget-wrapper">
+            <!-- Content gets injected dynamically via JS -->
         </section>
 
         {{/* --- Cbox Chatbox Section with Name --- */}}
@@ -79,7 +76,8 @@
 </div>
 
 <!-- JS and CSS for Now Playing Widget -->
-<script src="/js/now-playing.js"></script>
+<script src="/js/now-playing.js" defer></script>
 <link rel="stylesheet" href="/css/now-playing.css">
 
 {{ end }}
+
