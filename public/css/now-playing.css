@@ -1,0 +1,41 @@
+.now-playing-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.spotify-card {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #121212;
+  color: #fff;
+  gap: 12px;
+  max-width: 90%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.album-art {
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+}
+
+.track-info p {
+  margin: 4px 0;
+}
+
+.track-info a {
+  color: #1DB954;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.now-playing-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1db954;
+}
+

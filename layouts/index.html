@@ -17,7 +17,6 @@
 
         <div class="flex-break"></div>
 
-
         {{ if (or
             (and (fileExists "content/_index.md") .Content)
             (fileExists "content/index-about.md")) }}
@@ -41,10 +40,10 @@
                     {{- partial "list-posts.html" . -}}
                 {{ end }}
             {{ end }}
-                </div>
+        </div>
         {{ end }}
 
-        {{/*  --- SOCIAL ICONS MOVED HERE ---  */}}
+        {{/*  --- SOCIAL ICONS ---  */}}
         {{ if isset .Site.Params "socialicons" }}
         <div class="gk-social-icons">
             <ul class="gk-social-icons-list">
@@ -58,11 +57,18 @@
             </ul>
         </div>
         {{ end }}
-        {{/*  --- SOCIAL ICONS MOVED - END ---  */}}
+
+        {{/* --- NOW PLAYING SECTION (NEW) --- */}}
+        <section id="spotify-now-playing" style="text-align:center; margin: 1rem 0;">
+            <div id="song-info">
+                <p>Loading current song...</p>
+		<h2 id="now-playing-heading" style="display: none;">🎶 Currently listening to</h2>
+            </div>
+        </section>
 
         {{/* --- Cbox Chatbox Section with Name --- */}}
         <section class="homepage-section cbox-section">
-            <h2>Talktuah</h2>  {{/* --- Chatbox Name Heading - ADDED HERE --- */}}
+            <h2>Talktuah</h2>
             <div id="cbox-container">
                 <iframe src="https://www5.cbox.ws/box/?boxid=955416&boxtag=ra1KPJ" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
             </div>
@@ -71,5 +77,9 @@
 
     </div>
 </div>
+
+<!-- JS and CSS for Now Playing Widget -->
+<script src="/js/now-playing.js"></script>
+<link rel="stylesheet" href="/css/now-playing.css">
 
 {{ end }}
