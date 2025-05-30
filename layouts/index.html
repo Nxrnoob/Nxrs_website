@@ -1,7 +1,15 @@
 {{ define "main" }}
 
 <div class="homepage-container">
+    <!-- Center Column (About Me + Content) -->
     <div class="homepage-left-column">
+
+        <!-- NEW: Anime Quote Widget -->
+        <section id="anime-quote-box">
+            <div id="anime-quote-text">Loading...</div>
+            <div id="anime-quote-meta"></div>
+        </section>
+
         <section class="home-about">
             <div class="avatar">
                 {{ if isset .Site.Params "avatarurl" }}
@@ -26,6 +34,7 @@
         {{ end }}
     </div>
 
+    <!-- Right Column (Posts, Socials, Now Playing, Chatbox) -->
     <div class="homepage-right-column">
         {{ if isset .Site.Params "showpostsonhomepage" }}
         <div class="home-posts list-posts">
@@ -43,7 +52,6 @@
         </div>
         {{ end }}
 
-        {{/*  --- SOCIAL ICONS ---  */}}
         {{ if isset .Site.Params "socialicons" }}
         <div class="gk-social-icons">
             <ul class="gk-social-icons-list">
@@ -58,26 +66,30 @@
         </div>
         {{ end }}
 
-        {{/* --- NOW PLAYING SECTION: Tokyo Neon Night Widget --- */}}
-        <section id="spotify-now-playing" class="spotify-widget-wrapper">
-            <!-- Content gets injected dynamically via JS -->
-        </section>
+        <section id="spotify-now-playing" class="spotify-widget-wrapper"></section>
 
-        {{/* --- Cbox Chatbox Section with Name --- */}}
         <section class="homepage-section cbox-section">
             <h2>Talktuah</h2>
             <div id="cbox-container">
                 <iframe src="https://www5.cbox.ws/box/?boxid=955416&boxtag=ra1KPJ" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
             </div>
         </section>
-        {{/* --- Cbox Chatbox Section with Name - End --- */}}
-
     </div>
 </div>
 
-<!-- JS and CSS for Now Playing Widget -->
+<!-- Include JS and CSS -->
 <script src="/js/now-playing.js" defer></script>
+<script src="/js/anime-quotes.js" defer></script>
 <link rel="stylesheet" href="/css/now-playing.css">
+<link rel="stylesheet" href="/css/anime-quotes.css">
+
+<!-- 🌸 Sakura Animation -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Sakura('body'); // You can replace 'body' with '.homepage-left-column' to restrict it
+  });
+</script>
 
 {{ end }}
-

@@ -1,0 +1,57 @@
+#anime-quote-box {
+    border: 2px solid #cc00ff;
+    border-radius: 6px;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    font-family: 'JetBrains Mono', monospace;
+    color: inherit;
+    margin-bottom: 20px;
+
+    /* New: prevent overlap with center gutter */
+    margin-right: 35px;
+
+    width: calc(100% - 35px);
+    overflow-wrap: break-word;
+    position: relative;
+    z-index: 2;
+}
+#anime-quote-text {
+    font-size: 1.05rem;
+    font-style: italic;
+    margin-bottom: 8px;
+    line-height: 1.6;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+#anime-quote-meta {
+    font-size: 0.9rem;
+    color: #999;
+    overflow-wrap: break-word;
+}
+
+/* Sakura petals */
+.sakura-petal {
+    position: fixed;
+    top: -50px;
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle, #ffb6c1 0%, #ff69b4 100%);
+    border-radius: 50%;
+    opacity: 0.8;
+    pointer-events: none;
+    z-index: 1;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+

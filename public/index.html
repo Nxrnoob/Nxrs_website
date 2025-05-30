@@ -142,7 +142,15 @@
 <main id="content">
 
 <div class="homepage-container">
+    
     <div class="homepage-left-column">
+
+        
+        <section id="anime-quote-box">
+            <div id="anime-quote-text">Loading...</div>
+            <div id="anime-quote-meta"></div>
+        </section>
+
         <section class="home-about">
             <div class="avatar">
                 
@@ -184,6 +192,7 @@ Watchu lookin at huh ?</p>
         
     </div>
 
+    
     <div class="homepage-right-column">
         
         <div class="home-posts list-posts">
@@ -223,7 +232,6 @@ Watchu lookin at huh ?</p>
         </div>
         
 
-        
         
         <div class="gk-social-icons">
             <ul class="gk-social-icons-list">
@@ -268,26 +276,31 @@ Watchu lookin at huh ?</p>
         </div>
         
 
-        
-        <section id="spotify-now-playing" class="spotify-widget-wrapper">
-            
-        </section>
+        <section id="spotify-now-playing" class="spotify-widget-wrapper"></section>
 
-        
         <section class="homepage-section cbox-section">
             <h2>Talktuah</h2>
             <div id="cbox-container">
                 <iframe src="https://www5.cbox.ws/box/?boxid=955416&boxtag=ra1KPJ" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
             </div>
         </section>
-        
-
     </div>
 </div>
 
 
 <script src="/js/now-playing.js" defer></script>
+<script src="/js/anime-quotes.js" defer></script>
 <link rel="stylesheet" href="/css/now-playing.css">
+<link rel="stylesheet" href="/css/anime-quotes.css">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Sakura('body'); 
+  });
+</script>
 
 
         </main><footer class="footer">

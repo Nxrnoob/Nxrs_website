@@ -1,0 +1,24 @@
+.sakura {
+    position: fixed;
+    top: -10px;
+    width: 12px;
+    height: 12px;
+    background: url('https://cdn.jsdelivr.net/gh/nxrnoob/sakura@main/petal.png') no-repeat center center;
+    background-size: contain;
+    opacity: 0.8;
+    pointer-events: none;
+    z-index: 1;
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+

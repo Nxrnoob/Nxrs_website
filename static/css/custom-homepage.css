@@ -1,4 +1,4 @@
-/* General Styles - Applied to Desktop (and Mobile unless overridden) */
+/* ========== Layout Container ========== */
 .homepage-container {
     display: flex;
     flex-direction: row;
@@ -7,128 +7,114 @@
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
+    overflow-x: hidden;
+    gap: 20px; /* space between columns */
 }
 
+/* ========== New: Quotes Column ========== */
+
+
+
+/* ========== Center Column (About Me) ========== */
 .homepage-left-column {
-    flex: 7;
+    flex: 5;
     padding-right: 20px;
+    box-sizing: border-box;
 }
 
+/* ========== Right Column (Posts + Stuff) ========== */
 .homepage-right-column {
     flex: 3;
     padding-left: 20px;
     box-sizing: border-box;
-    padding: 20px;
-    border-left: 1px solid #ccc; /* Light mode vertical separator line */
+    border-left: 1px solid #ccc;
 }
 
-/* Recent Posts Box - Box Style for DESKTOP - Light Mode (Accent Color Border) */
+/* ========== Recent Posts Box ========== */
 body .home-posts.list-posts {
     padding: 20px;
-    border: 2px solid #cc00ff; /* Box border in ACCENT COLOR for DESKTOP */
+    border: 2px solid #cc00ff;
     border-radius: 5px;
     background-color: transparent;
-    margin-left: auto;  /* Center the box horizontally */
-    margin-right: auto; /* Center the box horizontally */
-    width: 90%;       /* Ensure the box is centered with a slight margin on both sides */
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }
 
 body .home-posts h2 {
-    /* NO Underline in DESKTOP */
     border-bottom: none;
     padding-bottom: 0;
     display: block;
     margin-bottom: 10px;
 }
 
-/* Dark Mode Styles */
+/* ========== Dark Mode ========== */
 @media (prefers-color-scheme: dark) {
     .homepage-right-column {
-        border-left-color: #555; /* Dark mode vertical separator line */
+        border-left-color: #555;
     }
 
-    /* Recent Posts Box - Box Style for DESKTOP - Dark Mode (Accent Color Border) */
+    .homepage-quotes-column {
+        border-right-color: #555;
+    }
+
     .home-posts.list-posts {
-        padding: 20px;
-        border: 2px solid #cc00ff; /* Box border in ACCENT COLOR for DESKTOP */
-        border-radius: 5px;
+        border: 2px solid #cc00ff;
         background-color: transparent;
     }
 
-    .home-posts h2 {
-        /* NO Underline in DESKTOP */
-        border-bottom: none;
-        padding-bottom: 0;
-        display: block;
-        margin-bottom: 10px;
+    #anime-quote-box {
+        background: rgba(255, 255, 255, 0.03);
     }
 }
 
-
-/* Basic List Styling - Remove default bullet points and padding */
+/* ========== List Styling ========== */
 .home-posts ul {
-    list-style-type: none; /* Remove default bullet points */
-    padding-left: 0;      /* Reset default padding for ul */
+    list-style-type: none;
+    padding-left: 0;
 }
 
-
-/* Mobile View Adjustments - Screen width up to 820px - LAYOUT & BOX SIZE */
+/* ========== Responsive (Mobile) ========== */
 @media only screen and (max-width: 820px) {
-
     .homepage-container {
-        display: block !important; /* Stack columns vertically on mobile */
-        text-align: center;        /* Center content on mobile */
+        display: block !important;
+        text-align: center;
     }
 
+    .homepage-quotes-column,
+    .homepage-left-column,
     .homepage-right-column {
         width: 100%;
-        margin-top: 20px;
-        padding-left: 0;
-        padding-right: 0;
-        border-left: none !important; /* Remove vertical separator line on mobile */
-        border-top: none !important;  /* No horizontal line */
-        padding-top: 0;              /* No extra padding */
-        display: block;              /* Revert to block display, remove flexbox */
-        align-items: initial;        /* Revert align-items */
-    }
-
-    .homepage-left-column {
-        width: 100%;
-        padding-left: 0;
-        padding-right: 0;
+        padding: 10px 0;
+        border: none !important;
     }
 
     .home-posts {
         width: 100%;
-        max-width: 90%;         /* Slightly reduced max-width to better center in mobile */
-        padding: 20px;             /* Keep padding for mobile box */
-        margin-left: auto;          /* Explicit margin-left: auto for centering */
-        margin-right: auto;         /* Explicit margin-right: auto for centering */
-        overflow-x: hidden;
-        box-sizing: border-box;
-        border: 2px solid #cc00ff; /* Added border back in mobile mode */
+        max-width: 90%;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px solid #cc00ff;
         border-radius: 5px;
-        text-align: left;         /* Revert text align to left for content within mobile box */
+        text-align: left;
         background-color: transparent;
     }
 
     .home-posts h2 {
-        font-size: 1.5em;          /* Slightly larger heading in mobile */
-        text-align: center;         /* Center heading in mobile */
-        border-bottom: 5px solid #cc00ff; /* ACCENT COLOR UNDERLINE for MOBILE - Thicker */
-        padding-bottom: 8px;           /* Add padding below underline */
-        display: inline-block;       /* Make underline fit text width */
-        margin-bottom: 30px;          /* Add more space below heading/underline */
+        font-size: 1.5em;
+        text-align: center;
+        border-bottom: 5px solid #cc00ff;
+        padding-bottom: 8px;
+        display: inline-block;
+        margin-bottom: 30px;
     }
 
     .home-posts .list-posts {
-        padding-left: 0;
-        padding-right: 0;
-        padding-top: 0;
+        padding: 0;
     }
 
-    /* REMOVE separator lines BETWEEN posts in mobile - NO LONGER NEEDED */
     .home-posts .post-title + .post-title {
-        border-top: none !important; /* REMOVED */
+        border-top: none !important;
     }
 }
