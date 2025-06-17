@@ -18,26 +18,26 @@
     
 
     
-    <title>Github OSINT repo scraper</title>
-    <meta name="description" content="GitHub-OSINT-Repository-Scraper A powerful OSINT (Open-Source Intelligence) tool to scrape GitHub repositories based on specific keywords, sort them by stars, …">
+    <title>GORS-GUI</title>
+    <meta name="description" content="A powerful python tool with friendly UI to scrape GitHub repositories based on specific keywords, sort them by stars, and filter them by programming language. …">
     <meta name="keywords" content=''>
 
-    <meta property="og:url" content="https://nxrnoob.com/projects/gitaiscrap/">
+    <meta property="og:url" content="https://nxrnoob.com/projects/gors-gui/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Github OSINT repo scraper">
-    <meta property="og:description" content="GitHub-OSINT-Repository-Scraper A powerful OSINT (Open-Source Intelligence) tool to scrape GitHub repositories based on specific keywords, sort them by stars, …">
+    <meta property="og:title" content="GORS-GUI">
+    <meta property="og:description" content="A powerful python tool with friendly UI to scrape GitHub repositories based on specific keywords, sort them by stars, and filter them by programming language. …">
     <meta property="og:image" content="https://nxrnoob.com/images/avatar.jpg">
     <meta property="og:image:secure_url" content="https://nxrnoob.com/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Github OSINT repo scraper">
-    <meta name="twitter:description" content="GitHub-OSINT-Repository-Scraper A powerful OSINT (Open-Source Intelligence) tool to scrape GitHub repositories based on specific keywords, sort them by stars, …">
-    <meta property="twitter:domain" content="https://nxrnoob.com/projects/gitaiscrap/">
-    <meta property="twitter:url" content="https://nxrnoob.com/projects/gitaiscrap/">
+    <meta name="twitter:title" content="GORS-GUI">
+    <meta name="twitter:description" content="A powerful python tool with friendly UI to scrape GitHub repositories based on specific keywords, sort them by stars, and filter them by programming language. …">
+    <meta property="twitter:domain" content="https://nxrnoob.com/projects/gors-gui/">
+    <meta property="twitter:url" content="https://nxrnoob.com/projects/gors-gui/">
     <meta name="twitter:image" content="https://nxrnoob.com/images/avatar.jpg">
 
     
-    <link rel="canonical" href="https://nxrnoob.com/projects/gitaiscrap/">
+    <link rel="canonical" href="https://nxrnoob.com/projects/gors-gui/">
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -144,51 +144,43 @@
     <div class="post container">
 
     <div class="post-header-section">
-        <h1>Github OSINT repo scraper</h1>
+        <h1>GORS-GUI</h1>
     </div>
 
     <div class="post-content">
-        <h1 id="github-osint-repository-scraper">GitHub-OSINT-Repository-Scraper</h1>
-<p>A powerful OSINT (Open-Source Intelligence) tool to scrape GitHub repositories based on specific keywords, sort them by stars, and filter them by programming language. This tool allows easy exploration of top repositories and opens them in a browser directly from the terminal. By default it analyze trends in AI/ML and can be configured by editing the gitai.py .</p>
+        <p>A powerful python tool with friendly UI to scrape GitHub repositories based on specific keywords, sort them by stars, and filter them by programming language. This tool allows easy exploration of top repositories and opens them in a browser directly from the tool.</p>
+<p>Yeah its a update for the old project with a UI and better search results.</p>
 <h2 id="features">Features</h2>
 <ul>
-<li><strong>GitHub API Integration:</strong> Fetches repositories using GitHub&rsquo;s API.</li>
-<li><strong>CSV Data Export:</strong> Saves raw data in <code>github_repos.csv</code> and cleans it in <code>github_repos_cleaned.csv</code>.</li>
-<li><strong>Language Categorization:</strong> Groups repositories by programming language. Repositories with no language specified are automatically classified under &ldquo;Miscellaneous.&rdquo;</li>
-<li><strong>Interactive Menu:</strong> Browse repositories by selecting a programming language, view the list of repositories, and open any repository directly in your browser.</li>
-<li><strong>OSINT Research:</strong> Perfect for researchers and tech scouts looking to analyze trends in AI/ML projects on GitHub.</li>
+<li><strong>Stores Github api locally for seamless searches</strong></li>
+<li><strong>Filter by programming language</strong></li>
+<li><strong>Easy to open up the retrieved results</strong></li>
+<li><strong>Just a better github search</strong></li>
 </ul>
-<h2 id="installation">Installation</h2>
+<h2 id="usage">Usage</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Clone the repository</span>
-</span></span><span style="display:flex;"><span>git clone https://github.com/Nxrnoob/GitHub-OSINT-Repository-Scraper.git
-</span></span><span style="display:flex;"><span>cd GitHub-OSINT-Repository-Scraper
+</span></span><span style="display:flex;"><span>git clone https://github.com/Nxrnoob/GORS-GUI.git
+</span></span><span style="display:flex;"><span>cd GORS-GUI
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create a virtual environment (not necessary but recommended)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Create a virtual environment (not necessary but recommended)</span>
 </span></span><span style="display:flex;"><span>python -m venv venv
 </span></span><span style="display:flex;"><span>source venv/bin/activate  <span style="color:#75715e"># Linux/macOS</span>
 </span></span><span style="display:flex;"><span>venv<span style="color:#ae81ff">\S</span>cripts<span style="color:#ae81ff">\a</span>ctivate    <span style="color:#75715e"># Windows</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Install dependencies</span>
-</span></span><span style="display:flex;"><span>pip install requests
-</span></span></code></pre></div><p>Configure Your GitHub API Key</p>
-<p>The tool requires a GitHub API Key for fetching repositories.
-Get Your GitHub API Key:</p>
-<pre><code>Go to GitHub Developer Settings.
-Generate a new token (classic) with repo read access.
-Copy the token and replace &quot;YOUR_GITHUB_API_KEY&quot; in gitai.py:
-</code></pre>
-<h2 id="usage">Usage</h2>
-<p>Simply run using:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python gitai.py
-</span></span></code></pre></div><p>The tool will:</p>
-<ul>
-<li>Fetch GitHub repositories based on your query.</li>
-<li>Save the results to CSV files.</li>
-<li>Display an interactive menu for browsing repositories by programming language.</li>
-<li>Allow you to open any selected repository in your default web browser.</li>
-</ul>
-<h2 id="demo-image">Demo image</h2>
-<p><img src="/images/gos.png" alt="demo"></p>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Install dependencies</span>
+</span></span><span style="display:flex;"><span>pip install -r requirements.txt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Note 
+</span></span><span style="display:flex;"><span>- The tool requires a GitHub API Key <span style="color:#66d9ef">for</span> fetching repositories.
+</span></span><span style="display:flex;"><span>Get Your GitHub API Key:
+</span></span><span style="display:flex;"><span>    Go to GitHub Developer Settings.
+</span></span><span style="display:flex;"><span>    Generate a new token <span style="color:#f92672">(</span>classic<span style="color:#f92672">)</span> with repo read access and copy it to paste it in the tool.
+</span></span></code></pre></div><h2 id="running-the-tool">Running the tool</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python main.py
+</span></span></code></pre></div><h2 id="demo">Demo</h2>
+<p>Click the below img to see the vid
+<a href="https://youtu.be/rGl0NNzb3sU"><img src="https://img.youtube.com/vi/rGl0NNzb3sU/0.jpg" alt="Watch the demo vid"></a></p>
+<p>Dont worry the api key i used is Expired now :)</p>
 
     </div>
     
