@@ -1,0 +1,61 @@
+<header class="header">
+    <nav class="header-nav">
+
+        {{ if .Site.Params.AvatarURL }}
+        <div class="avatar">
+            <a href="{{ .Site.BaseURL }}">
+                <img src='{{ .Scratch.Get "avatarImgSrc" }}' alt="avatar">
+            </a>
+        </div>
+        {{ end }}
+
+        <div class="nav-title">
+            <a class="nav-brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        </div>
+
+        {{ partial "lain-clock.html" . }}
+
+        <div class="nav-links">
+            {{ range .Site.Menus.main }}
+            <div class="nav-link">
+                <a href="{{ .URL }}" {{ if .Params.rel }}rel="{{ .Params.rel }}"{{ end }} aria-label="{{ .Name }}" > {{ .Name }} </a>
+            </div>
+            {{ end }}
+
+            {{ if .Site.Params.ShowThemeToggle }}
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+            {{ end }}
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            <!-- Hamburger menu -->
+            <ul class="nav-hamburger-list visibility-hidden">
+                {{ range .Site.Menus.main }}
+                <li class="nav-item">
+                    <a href="{{ .URL }}" {{ if .Params.rel }}rel="{{ .Params.rel }}"{{ end }}> {{ .Name }} </a>
+                </li>
+                {{ end }}
+                {{ if .Site.Params.ShowThemeToggle }}
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+                {{ end }}
+            </ul>
+
+        </div>
+    </nav>
+</header> 

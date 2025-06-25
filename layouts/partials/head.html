@@ -50,10 +50,12 @@
     {{ $jsBundle := resources.Match "js/**.js" | resources.Concat "js/bundle.js" | minify | resources.Fingerprint "sha256" }}
     <script src="{{ $jsBundle.RelPermalink }}" integrity="{{ $jsBundle.Data.Integrity }}"></script>
     <script src="/js/pitch-black-darkmode.js" defer></script>
+    <script src="/js/lain-clock.js" defer></script>
 
     <!-- Option for user to inject custom html -->
     {{ if .Site.Params.CustomHeadHTML }}
     {{ .Site.Params.CustomHeadHTML | safeHTML }}
     {{ end }}
     <link rel="stylesheet" href="{{ "css/custom-homepage.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/lain-clock.css" | relURL }}">
 </head>

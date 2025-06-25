@@ -51,10 +51,12 @@
     
     <script src="/js/bundle.min.3db3683d8f51852ceadf9d8fae9097d177a382244ec05d04f0467e0b58a8f4eb.js" integrity="sha256-PbNoPY9RhSzq352PrpCX0XejgiROwF0E8EZ&#43;C1io9Os="></script>
     <script src="/js/pitch-black-darkmode.js" defer></script>
+    <script src="/js/lain-clock.js" defer></script>
 
     
     
     <link rel="stylesheet" href="/css/custom-homepage.css">
+    <link rel="stylesheet" href="/css/lain-clock.css">
 </head>
 <body>
         <script>
@@ -75,25 +77,32 @@
             <a class="nav-brand" href="https://nxrnoob.com/">Nxrnoob</a>
         </div>
 
+        
+<div id="lain-clock-widget">
+    <div id="lain-clock-day"></div>
+    <div id="lain-clock-time"></div>
+</div> 
+
         <div class="nav-links">
             
             <div class="nav-link">
-                <a href="https://nxrnoob.com/" aria-label="" > Home </a>
+                <a href="/"  aria-label="Home" > Home </a>
             </div>
             
             <div class="nav-link">
-                <a href="https://nxrnoob.com/posts/" aria-label="" > Posts </a>
+                <a href="/posts/"  aria-label="Posts" > Posts </a>
             </div>
             
             <div class="nav-link">
-                <a href="https://nxrnoob.com/projects/" aria-label="" > Projects </a>
+                <a href="/projects/"  aria-label="Projects" > Projects </a>
             </div>
             
             <div class="nav-link">
-                <a href="https://nxrnoob.com/tags/" aria-label="" > Tags </a>
+                <a href="/tags/"  aria-label="Tags" > Tags </a>
             </div>
             
 
+            
             <span class="nav-icons-divider"></span>
             <div class="nav-link dark-theme-toggle">
                 <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
@@ -101,6 +110,7 @@
                     <span class="theme-toggle-icon" data-feather="moon"></span>
                 </a>
             </div>
+            
 
             <div class="nav-link" id="hamburger-menu-toggle">
                 <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
@@ -113,20 +123,21 @@
             <ul class="nav-hamburger-list visibility-hidden">
                 
                 <li class="nav-item">
-                    <a href="https://nxrnoob.com/" > Home </a>
+                    <a href="/" > Home </a>
                 </li>
                 
                 <li class="nav-item">
-                    <a href="https://nxrnoob.com/posts/" > Posts </a>
+                    <a href="/posts/" > Posts </a>
                 </li>
                 
                 <li class="nav-item">
-                    <a href="https://nxrnoob.com/projects/" > Projects </a>
+                    <a href="/projects/" > Projects </a>
                 </li>
                 
                 <li class="nav-item">
-                    <a href="https://nxrnoob.com/tags/" > Tags </a>
+                    <a href="/tags/" > Tags </a>
                 </li>
+                
                 
                 <li class="nav-item dark-theme-toggle">
                     <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
@@ -134,12 +145,12 @@
                         <span class="theme-toggle-icon" data-feather="moon"></span>
                     </a>
                 </li>
+                
             </ul>
 
         </div>
     </nav>
-</header>
-<main id="content">
+</header> <main id="content">
 <div class="container tags-list">
 
     <h1 class="list-title">Tags</h1>
