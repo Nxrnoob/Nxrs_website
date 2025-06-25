@@ -1,130 +1,263 @@
-#spotify-now-playing {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  border-radius: 20px;
-  background: rgba(30, 30, 60, 0.4);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-  color: #ffffff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  animation: fadeIn 1s ease-in-out;
-  position: relative;
-  overflow: hidden;
+#now-playing-widget {
+    background: var(--nowplaying-bg, #f5f5f7);
+    color: var(--nowplaying-fg, #222);
+    border-radius: 20px;
+    box-shadow: 0 2px 12px 0 rgba(60,60,60,0.10), 0 1.5px 4px 0 rgba(60,60,60,0.08);
+    padding: 20px 24px;
+    max-width: 370px;
+    margin: 24px auto;
+    font-family: 'Roboto', 'Google Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    transition: background 0.3s, color 0.3s;
 }
 
-/* Gradient background sparkle effect */
-#spotify-now-playing::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(120deg, #ff9ec4, #9b5de5, #00f0ff, #ff9ec4);
-  background-size: 300% 300%;
-  opacity: 0.08;
-  animation: moveGradient 30s ease infinite;
-  z-index: 0;
+#now-playing-widget .album-art {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px 0 rgba(60,60,60,0.10);
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
-.spotify-card {
-  display: flex;
-  align-items: center;
-  position: relative;
-  z-index: 1;
+#now-playing-widget .nowplaying-info {
+    flex: 1;
+    min-width: 0;
 }
 
-.album-art {
-  width: 80px;
-  height: 80px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-  margin-right: 1rem;
-  animation: pulseGlow 2s infinite;
+#now-playing-widget .song-title {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--nowplaying-title, #222);
+    margin-bottom: 2px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
-.track-info p {
-  margin: 0.3rem 0;
+#now-playing-widget .artist {
+    font-size: 0.98em;
+    color: var(--nowplaying-artist, #555);
+    opacity: 0.85;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
-.track-info strong {
-  font-size: 1.2rem;
-  color: #ff9ec4;
-  text-shadow: 0 0 8px rgba(255, 158, 196, 0.6);
+#now-playing-widget .spotify-logo {
+    width: 22px;
+    height: 22px;
+    margin-left: 8px;
+    opacity: 0.85;
+    vertical-align: middle;
 }
 
-.track-info a {
-  text-decoration: none;
-  color: #00f0ff;
-  font-weight: bold;
-  text-shadow: 0 0 5px #00f0ff;
+@media (prefers-color-scheme: dark) {
+    #now-playing-widget {
+        background: var(--nowplaying-bg-dark, #23272f);
+        color: var(--nowplaying-fg-dark, #f5f5f7);
+    }
+    #now-playing-widget .song-title {
+        color: var(--nowplaying-title-dark, #fff);
+    }
+    #now-playing-widget .artist {
+        color: var(--nowplaying-artist-dark, #b0b0b0);
+    }
 }
 
-.now-playing-label {
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
-  color: #ccc;
-  text-shadow: 0 0 4px #9b5de5;
+#now-playing-widget.anime-theme {
+    background: transparent;
+    border: 2px solid #cc00ff;
+    border-radius: 6px;
+    padding: 18px 18px 18px 14px;
+    max-width: 410px;
+    margin: 32px auto 20px auto;
+    font-family: 'Quicksand', 'Nunito', 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: none;
 }
 
-.equalizer {
-  display: inline-flex;
-  align-items: end;
-  margin-left: 8px;
-  height: 16px;
-}
-.equalizer span {
-  width: 3px;
-  margin: 0 1px;
-  background: #ff79c6;
-  animation: bounce 1s infinite ease-in-out;
-}
-.equalizer span:nth-child(1) { animation-delay: 0s; }
-.equalizer span:nth-child(2) { animation-delay: 0.1s; }
-.equalizer span:nth-child(3) { animation-delay: 0.2s; }
-.equalizer span:nth-child(4) { animation-delay: 0.3s; }
-.equalizer span:nth-child(5) { animation-delay: 0.4s; }
-
-
-@keyframes bounce {
-  0%, 100% { height: 4px; }
-  50% { height: 16px; }
+#now-playing-widget.anime-theme::before {
+    content: '';
+    position: absolute;
+    top: -60%;
+    left: -60%;
+    width: 220%;
+    height: 220%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.22) 50%, rgba(255,255,255,0.08) 100%);
+    pointer-events: none;
+    z-index: 1;
+    animation: anime-shimmer 3.5s linear infinite;
 }
 
-
-/* Neon animations */
-@keyframes moveGradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+@keyframes anime-shimmer {
+    0% {
+        transform: translateX(-30%) translateY(-30%) rotate(8deg);
+        opacity: 0.7;
+    }
+    50% {
+        transform: translateX(10%) translateY(10%) rotate(8deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(40%) translateY(40%) rotate(8deg);
+        opacity: 0.7;
+    }
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Remove shooting star and sparkle CSS */
+.shooting-star, .anime-sparkle, #now-playing-widget.anime-theme::before { display: none !important; }
+
+.np-album-art-wrap {
+    background: none;
+    border-radius: 10px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-@keyframes pulseGlow {
-  0% {
-    box-shadow: 0 0 10px #ff79c6;
-  }
-  50% {
-    box-shadow: 0 0 20px #8be9fd, 0 0 30px #bd93f9;
-  }
-  100% {
-    box-shadow: 0 0 10px #ff79c6;
-  }
+#now-playing-widget .album-art {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #fff;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+    /* Live glowing effect */
+    box-shadow:
+        0 0 16px 4px #cc00ff88,
+        0 0 32px 8px #00eaff44,
+        0 0 48px 12px #cc00ff22;
+    animation: album-glow 2.2s ease-in-out infinite alternate;
+}
+
+@keyframes album-glow {
+    0% {
+        box-shadow:
+            0 0 16px 4px #cc00ff88,
+            0 0 32px 8px #00eaff44,
+            0 0 48px 12px #cc00ff22;
+        filter: brightness(1) saturate(1.1);
+    }
+    60% {
+        box-shadow:
+            0 0 32px 8px #cc00ffcc,
+            0 0 48px 16px #00eaff88,
+            0 0 64px 24px #cc00ff44;
+        filter: brightness(1.08) saturate(1.25);
+    }
+    100% {
+        box-shadow:
+            0 0 16px 4px #cc00ff88,
+            0 0 32px 8px #00eaff44,
+            0 0 48px 12px #cc00ff22;
+        filter: brightness(1) saturate(1.1);
+    }
+}
+
+.np-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    z-index: 2;
+}
+
+.song-title {
+    font-size: 1.08em;
+    font-weight: 700;
+    color: #cc00ff;
+    text-shadow: 0 2px 8px #fff6, 0 0 2px #cc00ff44;
+    letter-spacing: 0.01em;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.artist {
+    font-size: 1em;
+    color: #333;
+    opacity: 0.92;
+    font-weight: 500;
+    text-shadow: 0 1px 4px #fff8;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.album-name {
+    font-size: 0.98em;
+    color: #666;
+    opacity: 0.85;
+    font-style: italic;
+    text-shadow: 0 1px 4px #fff8;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.spotify-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: transparent;
+    color: #cc00ff;
+    font-weight: 700;
+    font-size: 0.89em;
+    border: 2px solid #cc00ff;
+    border-radius: 999px;
+    padding: 4px 12px;
+    margin-top: 8px;
+    box-shadow: none;
+    text-decoration: none;
+    transition: border-color 0.2s, color 0.2s, box-shadow 0.2s, transform 0.18s;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 0.01em;
+    filter: none;
+}
+.spotify-btn img {
+    width: 17px;
+    height: 17px;
+    filter: drop-shadow(0 0 2px #cc00ff88);
+    background: #fff;
+    border-radius: 50%;
+    padding: 1.5px;
+}
+.spotify-btn:hover, .spotify-btn:focus {
+    color: #fff;
+    background: #cc00ff;
+    border-color: #a000cc;
+    box-shadow: 0 0 8px 2px #cc00ff66;
+    transform: scale(1.07);
+}
+
+@media (max-width: 600px) {
+    #now-playing-widget.anime-theme {
+        flex-direction: column;
+        gap: 14px;
+        padding: 14px 4px;
+    }
+    #now-playing-widget .album-art {
+        width: 60px;
+        height: 60px;
+    }
+    .spotify-btn img {
+        width: 22px;
+        height: 22px;
+    }
 }
 

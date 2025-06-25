@@ -4,8 +4,6 @@ async function fetchNowPlaying() {
     const data = await response.json();
 
     const container = document.getElementById("spotify-now-playing");
-
-    // Clear the container each time
     container.innerHTML = "";
 
     if (data.error || !data.is_playing) {
@@ -14,16 +12,17 @@ async function fetchNowPlaying() {
     }
 
     const html = `
-      <div class="now-playing-label">🎶 Currently Listening To
-      <span class="equalizer">
-    <span></span><span></span><span></span><span></span><span></span>
-  </span></div>
-      <div class="spotify-card">
-        <img src="${data.album_image_url}" alt="Album Art" class="album-art" />
-        <div class="track-info">
-          <p><strong>${data.title}</strong></p>
-          <p>${data.artist}</p>
-          <a href="${data.song_url}" target="_blank">Listen on Spotify</a>
+      <div id="now-playing-widget" class="anime-theme">
+        <div class="np-album-art-wrap">
+          <img class="album-art" src="${data.album_image_url}" alt="Album Art">
+        </div>
+        <div class="np-info">
+          <div class="song-title">${data.title}</div>
+          <div class="artist">${data.artist}</div>
+          <div class="album-name">${data.album_name || ''}</div>
+          <a class="spotify-btn" href="${data.song_url}" target="_blank" rel="noopener">
+            <img src="/svg/icons/spotify.svg" alt="Spotify"> Listen with me
+          </a>
         </div>
       </div>
     `;
