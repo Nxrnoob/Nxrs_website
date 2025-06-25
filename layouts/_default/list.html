@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="container list-posts">
+    <h1 class="list-title">{{ i18n .Name }}</h1>
+    {{ range .Pages.GroupByDate "2006" }}
+        <h2 class="posts-year">{{ .Key }}</h2>
+        {{ range .Pages }}
+            <div class="post-title">
+                <a href="{{ .Permalink }}" class="post-link">{{ .Title | markdownify }}</a>
+                <div class="flex-break"></div>
+                <span class="post-date">{{ dateFormat (or .Site.Params.dateFormat "January 2, 2006") .Date}}</span>
+            </div>
+        {{ end }}
+    {{ end }}
+</div>
+{{ end }} 

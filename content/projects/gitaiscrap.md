@@ -2,6 +2,7 @@
 title = "Github OSINT repo scraper"
 type = "page"
 date = "2025-02-16"
+tags = ["projects"]
 +++
 # GitHub-OSINT-Repository-Scraper
 A powerful OSINT (Open-Source Intelligence) tool to scrape GitHub repositories based on specific keywords, sort them by stars, and filter them by programming language. This tool allows easy exploration of top repositories and opens them in a browser directly from the terminal. By default it analyze trends in AI/ML and can be configured by editing the gitai.py .

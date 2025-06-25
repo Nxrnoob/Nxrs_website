@@ -2,7 +2,7 @@
 title = "Doku.Ai"
 type = "page"
 date = "2025-06-20"
-tags = ["Projects"]
+tags = ["projects"]
 +++
 
 # Doku.AI an AI Document Scanner
