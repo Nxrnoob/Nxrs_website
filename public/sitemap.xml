@@ -2,42 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nxrnoob.com/projects/dokuai/</loc>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-06-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/obs-sync/</loc>
+    <lastmod>2025-06-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/obsidian/</loc>
+    <lastmod>2025-06-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-06-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-06-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/dokuai/</loc>
     <lastmod>2025-06-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nxrnoob.com/</loc>
+    <loc>http://localhost:1313/projects/</loc>
     <lastmod>2025-06-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nxrnoob.com/projects/</loc>
+    <loc>http://localhost:1313/tags/projects/</loc>
     <lastmod>2025-06-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nxrnoob.com/tags/projects/</loc>
-    <lastmod>2025-06-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nxrnoob.com/tags/</loc>
-    <lastmod>2025-06-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nxrnoob.com/projects/gors-gui/</loc>
+    <loc>http://localhost:1313/projects/gors-gui/</loc>
     <lastmod>2025-06-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nxrnoob.com/projects/gitaiscrap/</loc>
+    <loc>http://localhost:1313/projects/gitaiscrap/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nxrnoob.com/tags/anime/</loc>
+    <loc>http://localhost:1313/tags/anime/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nxrnoob.com/posts/anime-the-frames-of-emotion/</loc>
+    <loc>http://localhost:1313/posts/anime-the-frames-of-emotion/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nxrnoob.com/posts/first-post/</loc>
+    <loc>http://localhost:1313/posts/first-post/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nxrnoob.com/posts/</loc>
+    <loc>http://localhost:1313/tags/thanks/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nxrnoob.com/tags/thanks/</loc>
-    <lastmod>2024-02-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nxrnoob.com/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>
