@@ -45,6 +45,21 @@
 /* Hide on mobile to avoid clutter */
 @media (max-width: 820px) {
     #lain-clock-widget {
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        right: auto;
+        width: max-content;
+        max-width: 90vw;
         font-size: 10px;
+        white-space: normal;
+        overflow-wrap: break-word;
+        z-index: 10;
+        pointer-events: none;
+        background: rgba(0,0,0,0.3);
+        border-radius: 4px;
+        padding: 1px 6px;
+        text-align: center;
+        transform: translateX(-50%);
     }
 } 
