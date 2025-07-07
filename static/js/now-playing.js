@@ -6,7 +6,8 @@ async function fetchNowPlaying() {
     const container = document.getElementById("spotify-now-playing");
     container.innerHTML = "";
 
-    if (data.error || !data.is_playing) {
+    // ✅ Updated field names
+    if (data.error || !data.isPlaying) {
       container.innerHTML = `<p>Not playing anything right now 🎧</p>`;
       return;
     }
@@ -14,13 +15,13 @@ async function fetchNowPlaying() {
     const html = `
       <div id="now-playing-widget" class="anime-theme">
         <div class="np-album-art-wrap">
-          <img class="album-art" src="${data.album_image_url}" alt="Album Art">
+          <img class="album-art" src="${data.albumImageUrl}" alt="Album Art">
         </div>
         <div class="np-info">
           <div class="song-title">${data.title}</div>
           <div class="artist">${data.artist}</div>
-          <div class="album-name">${data.album_name || ''}</div>
-          <a class="spotify-btn" href="${data.song_url}" target="_blank" rel="noopener">
+          <div class="album-name">${data.album || ''}</div>
+          <a class="spotify-btn" href="${data.songUrl}" target="_blank" rel="noopener">
             <img src="/svg/icons/spotify.svg" alt="Spotify"> Listen with me
           </a>
         </div>
@@ -34,9 +35,8 @@ async function fetchNowPlaying() {
   }
 }
 
-// Run on page load and every 15 seconds
 window.addEventListener("DOMContentLoaded", () => {
   fetchNowPlaying();
-  setInterval(fetchNowPlaying, 5000); // every 15 sec
+  setInterval(fetchNowPlaying, 5000);
 });
 
