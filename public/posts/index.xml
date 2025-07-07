@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Nxrnoob</title>
-    <link>https://nxrnoob.com/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Nxrnoob</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 29 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://nxrnoob.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>obs-sync</title>
-      <link>https://nxrnoob.com/posts/obs-sync/</link>
+      <link>http://localhost:1313/posts/obs-sync/</link>
       <pubDate>Sun, 29 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://nxrnoob.com/posts/obs-sync/</guid>
+      <guid>http://localhost:1313/posts/obs-sync/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;A simple, free, and private way to keep your Obsidian vault in sync between Android and Linux using Syncthing.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;why-i-wanted-this&#34;&gt;Why I Wanted This&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;I dont wanna pay for Obsidian Sync Subscription&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;My notes is not staying in cloud , Nope.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Or setting up something complex with script&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Works offline&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Reliable On Android and Linux&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;solution--syncthing--obsidian-sync&#34;&gt;Solution : Syncthing — Obsidian Sync&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://syncthing.net/&#34;&gt;Syncthing&lt;/a&gt; is an open-source tool that syncs folders between devices over local network or internet — privately and securely.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Obsidian : My Second Brain</title>
-      <link>https://nxrnoob.com/posts/obsidian/</link>
+      <link>http://localhost:1313/posts/obsidian/</link>
       <pubDate>Sun, 29 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://nxrnoob.com/posts/obsidian/</guid>
+      <guid>http://localhost:1313/posts/obsidian/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Obsidian&lt;/strong&gt; can be a second brain , an extended memory or just another note taking app its all based on how &lt;strong&gt;you&lt;/strong&gt; use it.&lt;/p&gt;&#xA;&lt;p&gt;I started out using it as &amp;ldquo;just note taking app&amp;rdquo; , then it became my &amp;ldquo;extended memory&amp;rdquo; and now , its basically my &amp;ldquo;second brain&amp;rdquo;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;second-brain-huh-what&#34;&gt;&amp;ldquo;Second Brain&amp;rdquo; huh what?&lt;/h3&gt;&#xA;&lt;p&gt;Yeah i get it - the term can sound flashy , futuristic , or something i try to hype it , but once you start using Obsidian or any digital note taking app or even the traditional pen and paper and structure it up to your likings or setup , you will understand that its a good candidate for that Title.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Anime the Frames of Emotion</title>
-      <link>https://nxrnoob.com/posts/anime-the-frames-of-emotion/</link>
+      <link>http://localhost:1313/posts/anime-the-frames-of-emotion/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://nxrnoob.com/posts/anime-the-frames-of-emotion/</guid>
+      <guid>http://localhost:1313/posts/anime-the-frames-of-emotion/</guid>
       <description>&lt;p&gt;Okay let&amp;rsquo;s talk about anime , even if anime is not ur cup of &lt;del&gt;tea&lt;/del&gt; coffee , pretend it is , just like when you fake interest around your relatives.&lt;/p&gt;&#xA;&lt;p&gt;So Anime ,  what a wonder full piece of content ever created , iam not gonna glaze the anime but imma say my view of it , so get comfortable and read it.&lt;/p&gt;&#xA;&lt;p&gt;lets start from how i got into it and y i like it , One random day i was walking in the terrace in a breezy night surfing the web in boredom and found a app in this sort of page that i dont remember and installed it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Click ME !</title>
-      <link>https://nxrnoob.com/posts/first-post/</link>
+      <link>http://localhost:1313/posts/first-post/</link>
       <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://nxrnoob.com/posts/first-post/</guid>
+      <guid>http://localhost:1313/posts/first-post/</guid>
       <description>&lt;p&gt;Thanks for visiting my site , stay tuned to see the upcoming posts ^_^&#xA;It wil soon turn from an about me page to an awesome informative hub i promise.&lt;/p&gt;</description>
     </item>
   </channel>
