@@ -1,6 +1,6 @@
 async function fetchNowPlaying() {
   try {
-    const response = await fetch("https://spotify-now-playing-api.onrender.com/now-playing");
+    const response = await fetch("https://spotify-now-playing-api-92zi-5x23umk7h-nxrnoobs-projects.vercel.app/now-playing");
     const data = await response.json();
 
     const container = document.getElementById("spotify-now-playing");
