@@ -2,8 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nxrnoob.com/tags/ai/</loc>
+    <lastmod>2026-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nxrnoob.com/posts/llm-instruction/</loc>
+    <lastmod>2026-05-05T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://nxrnoob.com/</loc>
-    <lastmod>2025-06-29T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nxrnoob.com/posts/</loc>
+    <lastmod>2026-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nxrnoob.com/tags/</loc>
+    <lastmod>2026-05-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nxrnoob.com/posts/obs-sync/</loc>
     <lastmod>2025-06-29T00:00:00+00:00</lastmod>
@@ -12,12 +24,6 @@
     <lastmod>2025-06-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nxrnoob.com/posts/obsidian/</loc>
-    <lastmod>2025-06-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nxrnoob.com/posts/</loc>
-    <lastmod>2025-06-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nxrnoob.com/tags/</loc>
     <lastmod>2025-06-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nxrnoob.com/projects/dokuai/</loc>

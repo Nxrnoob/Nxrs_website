@@ -48,3 +48,7 @@ theme = 'gokarna-hugo'
     url = "/tags/"
     weight = 4
 
+  [[menu.main]]
+    name = "Tools"
+    url = "https://archlinux.org"
+    weight = 5
