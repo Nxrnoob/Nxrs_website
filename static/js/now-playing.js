@@ -1,6 +1,3 @@
-<div id="spotify-now-playing"></div>
-
-<script>
 let lastTrackId = null; // remember the last song played
 
 function renderWidgetSkeleton() {
@@ -78,4 +75,3 @@ async function fetchNowPlaying() {
 
 // 🔥 Start loop
 fetchNowPlaying();
-</script>
