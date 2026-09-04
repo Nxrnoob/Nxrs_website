@@ -27,12 +27,7 @@ async function fetchNowPlaying() {
   renderWidgetSkeleton();
 
   try {
-    const response = await fetch("https://spotify-now-playing-api-92zi-5x23umk7h-nxrnoobs-projects.vercel.app/now-playing", {
-      method: "GET",
-      headers: { "Accept": "application/json" },
-      cache: "no-store"
-    });
-
+    const response = await fetch("https://spotify-now-playing-api.onrender.com/now-playing");
     const data = await response.json();
     const widget = document.getElementById("now-playing-widget");
 
