@@ -1,0 +1,82 @@
+/* ========== Copy Button for Code Blocks ========== */
+
+div.highlight {
+    position: relative;
+}
+
+.code-copy-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border: 1px solid rgba(204, 204, 204, 0.35);
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.45);
+    color: #ccc;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+div.highlight:hover .code-copy-btn,
+.code-copy-btn:focus-visible,
+.code-copy-btn.copied,
+.code-copy-btn.copy-failed {
+    opacity: 1;
+}
+
+.code-copy-btn:hover {
+    color: var(--accent-color, #cc00ff);
+    border-color: var(--accent-color, #cc00ff);
+}
+
+.code-copy-btn.copied {
+    color: #4ade80;
+    border-color: #4ade80;
+}
+
+.code-copy-btn.copy-failed {
+    color: #f87171;
+    border-color: #f87171;
+}
+
+.code-copy-btn:focus-visible {
+    outline: 2px solid var(--accent-color, #cc00ff);
+    outline-offset: 2px;
+}
+
+/* Touch devices: button always visible */
+@media (hover: none) {
+    .code-copy-btn {
+        opacity: 1;
+    }
+}
+
+/* ========== Dark Mode: keep code blocks visible ========== */
+/* Theme dark.css forces pre background to var(--dark-secondary-color),
+   which is pure black on this site, same as the page background. */
+
+body.darkmode-active div.highlight pre {
+    background-color: #161616 !important;
+    border: 1px solid rgba(204, 204, 204, 0.18);
+    border-radius: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body.darkmode-active div.highlight pre {
+        background-color: #161616 !important;
+        border: 1px solid rgba(204, 204, 204, 0.18);
+        border-radius: 4px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .code-copy-btn {
+        transition: none;
+    }
+}
