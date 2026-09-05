@@ -1,0 +1,100 @@
+/* ========== Solo Leveling "System" copied state ========== */
+/* Shared by the code-block copy button and the selection pill. */
+
+@keyframes sys-pop {
+    0% {
+        transform: scale(0.92);
+        opacity: 0.6;
+    }
+    55% {
+        transform: scale(1.04);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes sys-glow {
+    0%, 100% {
+        box-shadow: 0 0 6px rgba(204, 0, 255, 0.45), inset 0 0 6px rgba(204, 0, 255, 0.12);
+    }
+    50% {
+        box-shadow: 0 0 16px rgba(204, 0, 255, 0.8), inset 0 0 10px rgba(204, 0, 255, 0.25);
+    }
+}
+
+@keyframes sys-scan {
+    from {
+        transform: translateX(-120%);
+    }
+    to {
+        transform: translateX(320%);
+    }
+}
+
+/* ----- Selection pill: full system window ----- */
+
+.copy-selection-btn.system-copied {
+    border-color: var(--accent-color, #cc00ff);
+    font-family: ui-monospace, "JetBrains Mono", "Fira Code", monospace;
+    animation: sys-pop 0.25s ease-out, sys-glow 0.7s ease-in-out 2;
+    overflow: hidden;
+}
+
+.copy-selection-btn.system-copied .sys-label {
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.copy-selection-btn.system-copied .sys-msg {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: var(--accent-color, #cc00ff);
+    text-shadow: 0 0 8px rgba(204, 0, 255, 0.55);
+}
+
+/* scanline sweep */
+.copy-selection-btn.system-copied::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    background: linear-gradient(90deg, transparent, rgba(204, 0, 255, 0.22), transparent);
+    animation: sys-scan 0.7s ease-out 2;
+    pointer-events: none;
+}
+
+/* ----- Code block corner button: glow pulse ----- */
+
+.code-copy-btn.system-copied {
+    border-color: var(--accent-color, #cc00ff);
+    color: var(--accent-color, #cc00ff);
+    animation: sys-pop 0.25s ease-out, sys-glow 0.7s ease-in-out 2;
+    overflow: hidden;
+}
+
+.code-copy-btn.system-copied::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    background: linear-gradient(90deg, transparent, rgba(204, 0, 255, 0.22), transparent);
+    animation: sys-scan 0.7s ease-out 2;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .copy-selection-btn.system-copied,
+    .code-copy-btn.system-copied,
+    .copy-selection-btn.system-copied::after,
+    .code-copy-btn.system-copied::after {
+        animation: none;
+    }
+}

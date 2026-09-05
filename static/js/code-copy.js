@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
       copyText(pre.innerText)
         .then(function () {
           btn.innerHTML = ICON_CHECK;
-          btn.classList.add("copied");
+          btn.classList.add("copied", "system-copied");
           btn.setAttribute("aria-label", "Copied");
         })
         .catch(function () {
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
           clearTimeout(timer);
           timer = setTimeout(function () {
             btn.innerHTML = ICON_COPY;
-            btn.classList.remove("copied", "copy-failed");
+            btn.classList.remove("copied", "copy-failed", "system-copied");
             btn.setAttribute("aria-label", "Copy code");
           }, RESET_MS);
         });
