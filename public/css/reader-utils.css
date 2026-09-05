@@ -1,0 +1,58 @@
+/* ========== Reader Utilities (back to top + copy link) ========== */
+
+.reader-utils {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 9998;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+}
+
+.reader-utils.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.reader-utils button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: 1px solid rgba(204, 204, 204, 0.35);
+    border-radius: 4px;
+    background: rgba(20, 20, 20, 0.92);
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.reader-utils button:hover {
+    color: var(--accent-color, #cc00ff);
+    border-color: var(--accent-color, #cc00ff);
+}
+
+.reader-utils button:focus-visible {
+    outline: 2px solid var(--accent-color, #cc00ff);
+    outline-offset: 2px;
+}
+
+.reader-utils button.system-copied {
+    border-color: var(--accent-color, #cc00ff);
+    color: var(--accent-color, #cc00ff);
+    animation: sys-pop 0.25s ease-out, sys-glow 0.7s ease-in-out 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reader-utils,
+    .reader-utils button {
+        transition: none;
+        animation: none;
+    }
+}
