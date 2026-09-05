@@ -1,0 +1,55 @@
+/* ========== Copy Selection Floating Button ========== */
+
+.copy-selection-btn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border: 1px solid rgba(204, 204, 204, 0.35);
+    border-radius: 0;
+    background: rgba(20, 20, 20, 0.92);
+    color: #fff;
+    font-size: 12.5px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity 0.15s ease, transform 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    pointer-events: none;
+}
+
+.copy-selection-btn.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.copy-selection-btn:hover {
+    color: var(--accent-color, #cc00ff);
+    border-color: var(--accent-color, #cc00ff);
+}
+
+.copy-selection-btn.copied {
+    color: #4ade80;
+    border-color: #4ade80;
+}
+
+.copy-selection-btn:focus-visible {
+    outline: 2px solid var(--accent-color, #cc00ff);
+    outline-offset: 2px;
+}
+
+.copy-selection-btn svg {
+    flex-shrink: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .copy-selection-btn {
+        transition: none;
+        transform: none;
+    }
+}
