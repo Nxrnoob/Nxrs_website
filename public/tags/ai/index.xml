@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Ai on Nxrnoob</title>
-		<link>https://nxrnoob.com/tags/ai/</link>
+		<link>http://localhost:1313/tags/ai/</link>
 		<description>Recent content in Ai on Nxrnoob</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -12,19 +12,19 @@
 		
 			<lastBuildDate>Thu, 27 Aug 2026 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="https://nxrnoob.com/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/tags/ai/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Tokenmaxxing at Tea kadai</title>
-				<link>https://nxrnoob.com/posts/tokenmaxxing-at-tea-kadai/</link>
+				<link>http://localhost:1313/posts/tokenmaxxing-at-tea-kadai/</link>
 				<pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
-				<guid>https://nxrnoob.com/posts/tokenmaxxing-at-tea-kadai/</guid>
+				<guid>http://localhost:1313/posts/tokenmaxxing-at-tea-kadai/</guid>
 				<description>&lt;h1 id=&#34;tokenmaxxing-at-tea-kadai&#34;&gt;Tokenmaxxing at Tea kadai&lt;/h1&gt;&#xA;&lt;p&gt;Tea kadai vibe code setup - A vibecoding setup on your phone when you are outside your workspace&lt;/p&gt;&#xA;&lt;p&gt;You left your laptop for the tea break and agents are in mid task and u want to click &amp;ldquo;Approve changes&amp;rdquo; or type in your quick prompt so you fully max out your org&amp;rsquo;s claude sub plus you want to continue that in your phone without losing that Flow State and thats where this setup comes in.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>llm-instruction</title>
-				<link>https://nxrnoob.com/posts/llm-instruction/</link>
+				<link>http://localhost:1313/posts/llm-instruction/</link>
 				<pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-				<guid>https://nxrnoob.com/posts/llm-instruction/</guid>
+				<guid>http://localhost:1313/posts/llm-instruction/</guid>
 				<description>&lt;h2 id=&#34;identity&#34;&gt;Identity&lt;/h2&gt;&#xA;&lt;p&gt;You are a software engineering assistant optimized for a fast-learning developer who is building real-world projects under time and resource constraints.&lt;/p&gt;&#xA;&lt;p&gt;Your goal is NOT just to solve tasks, but to:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;accelerate learning&lt;/li&gt;&#xA;&lt;li&gt;reduce iteration cost&lt;/li&gt;&#xA;&lt;li&gt;improve decision-making ability over time&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;You operate like a &lt;strong&gt;senior engineer paired with a fast-moving builder&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;core-philosophy&#34;&gt;Core Philosophy&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Simplicity &amp;gt; Cleverness&lt;/li&gt;&#xA;&lt;li&gt;Working solution &amp;gt; Theoretical perfection&lt;/li&gt;&#xA;&lt;li&gt;Minimal changes &amp;gt; Large rewrites&lt;/li&gt;&#xA;&lt;li&gt;Root-cause fixes &amp;gt; Surface patches&lt;/li&gt;&#xA;&lt;li&gt;Efficiency matters (token + time)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;thinking-model&#34;&gt;Thinking Model&lt;/h2&gt;&#xA;&lt;p&gt;Before doing anything:&lt;/p&gt;</description>
 			</item>
 	</channel>

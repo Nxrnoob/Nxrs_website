@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Posts on Nxrnoob</title>
-		<link>https://nxrnoob.com/posts/</link>
+		<link>http://localhost:1313/posts/</link>
 		<description>Recent content in Posts on Nxrnoob</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -12,54 +12,54 @@
 		
 			<lastBuildDate>Thu, 27 Aug 2026 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="https://nxrnoob.com/posts/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Tokenmaxxing at Tea kadai</title>
-				<link>https://nxrnoob.com/posts/tokenmaxxing-at-tea-kadai/</link>
+				<link>http://localhost:1313/posts/tokenmaxxing-at-tea-kadai/</link>
 				<pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
-				<guid>https://nxrnoob.com/posts/tokenmaxxing-at-tea-kadai/</guid>
+				<guid>http://localhost:1313/posts/tokenmaxxing-at-tea-kadai/</guid>
 				<description>&lt;h1 id=&#34;tokenmaxxing-at-tea-kadai&#34;&gt;Tokenmaxxing at Tea kadai&lt;/h1&gt;&#xA;&lt;p&gt;Tea kadai vibe code setup - A vibecoding setup on your phone when you are outside your workspace&lt;/p&gt;&#xA;&lt;p&gt;You left your laptop for the tea break and agents are in mid task and u want to click &amp;ldquo;Approve changes&amp;rdquo; or type in your quick prompt so you fully max out your org&amp;rsquo;s claude sub plus you want to continue that in your phone without losing that Flow State and thats where this setup comes in.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Vibe coding on the fly</title>
-				<link>https://nxrnoob.com/posts/vibe-code-in-da-coffee-shop/</link>
+				<link>http://localhost:1313/posts/vibe-code-in-da-coffee-shop/</link>
 				<pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
-				<guid>https://nxrnoob.com/posts/vibe-code-in-da-coffee-shop/</guid>
+				<guid>http://localhost:1313/posts/vibe-code-in-da-coffee-shop/</guid>
 				<description>&lt;h1 id=&#34;tokenmaxxing-at-tea-kadai&#34;&gt;Tokenmaxxing at Tea kadai&lt;/h1&gt;&#xA;&lt;p&gt;Tea kadai vibe code setup - A vibecoding setup from your phone when you are outside your wokspace&lt;/p&gt;&#xA;&lt;p&gt;You left your laptop for the tea break and agents are in mid task and u want to click &amp;ldquo;Approve changes&amp;rdquo; or type in your quick prompt so you fully max out your org&amp;rsquo;s claude sub plus you want to continue that in your phone without losing that Flow State and thats where this setup comes in.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>llm-instruction</title>
-				<link>https://nxrnoob.com/posts/llm-instruction/</link>
+				<link>http://localhost:1313/posts/llm-instruction/</link>
 				<pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-				<guid>https://nxrnoob.com/posts/llm-instruction/</guid>
+				<guid>http://localhost:1313/posts/llm-instruction/</guid>
 				<description>&lt;h2 id=&#34;identity&#34;&gt;Identity&lt;/h2&gt;&#xA;&lt;p&gt;You are a software engineering assistant optimized for a fast-learning developer who is building real-world projects under time and resource constraints.&lt;/p&gt;&#xA;&lt;p&gt;Your goal is NOT just to solve tasks, but to:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;accelerate learning&lt;/li&gt;&#xA;&lt;li&gt;reduce iteration cost&lt;/li&gt;&#xA;&lt;li&gt;improve decision-making ability over time&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;You operate like a &lt;strong&gt;senior engineer paired with a fast-moving builder&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;core-philosophy&#34;&gt;Core Philosophy&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Simplicity &amp;gt; Cleverness&lt;/li&gt;&#xA;&lt;li&gt;Working solution &amp;gt; Theoretical perfection&lt;/li&gt;&#xA;&lt;li&gt;Minimal changes &amp;gt; Large rewrites&lt;/li&gt;&#xA;&lt;li&gt;Root-cause fixes &amp;gt; Surface patches&lt;/li&gt;&#xA;&lt;li&gt;Efficiency matters (token + time)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;thinking-model&#34;&gt;Thinking Model&lt;/h2&gt;&#xA;&lt;p&gt;Before doing anything:&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>obs-sync</title>
-				<link>https://nxrnoob.com/posts/obs-sync/</link>
+				<link>http://localhost:1313/posts/obs-sync/</link>
 				<pubDate>Sun, 29 Jun 2025 00:00:00 +0000</pubDate>
-				<guid>https://nxrnoob.com/posts/obs-sync/</guid>
+				<guid>http://localhost:1313/posts/obs-sync/</guid>
 				<description>&lt;blockquote&gt;&#xA;&lt;p&gt;A simple, free, and private way to keep your Obsidian vault in sync between Android and Linux using Syncthing.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;why-i-wanted-this&#34;&gt;Why I Wanted This&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;I dont wanna pay for Obsidian Sync Subscription&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;My notes is not staying in cloud , Nope.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Or setting up something complex with script&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Works offline&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Reliable On Android and Linux&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;solution--syncthing--obsidian-sync&#34;&gt;Solution : Syncthing — Obsidian Sync&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://syncthing.net/&#34;&gt;Syncthing&lt;/a&gt; is an open-source tool that syncs folders between devices over local network or internet — privately and securely.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Obsidian : My Second Brain</title>
-				<link>https://nxrnoob.com/posts/obsidian/</link>
+				<link>http://localhost:1313/posts/obsidian/</link>
 				<pubDate>Sun, 29 Jun 2025 00:00:00 +0000</pubDate>
-				<guid>https://nxrnoob.com/posts/obsidian/</guid>
+				<guid>http://localhost:1313/posts/obsidian/</guid>
 				<description>&lt;p&gt;&lt;strong&gt;Obsidian&lt;/strong&gt; can be a second brain , an extended memory or just another note taking app its all based on how &lt;strong&gt;you&lt;/strong&gt; use it.&lt;/p&gt;&#xA;&lt;p&gt;I started out using it as &amp;ldquo;just note taking app&amp;rdquo; , then it became my &amp;ldquo;extended memory&amp;rdquo; and now , its basically my &amp;ldquo;second brain&amp;rdquo;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;second-brain-huh-what&#34;&gt;&amp;ldquo;Second Brain&amp;rdquo; huh what?&lt;/h3&gt;&#xA;&lt;p&gt;Yeah i get it - the term can sound flashy , futuristic , or something i try to hype it , but once you start using Obsidian or any digital note taking app or even the traditional pen and paper and structure it up to your likings or setup , you will understand that its a good candidate for that Title.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Anime the Frames of Emotion</title>
-				<link>https://nxrnoob.com/posts/anime-the-frames-of-emotion/</link>
+				<link>http://localhost:1313/posts/anime-the-frames-of-emotion/</link>
 				<pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-				<guid>https://nxrnoob.com/posts/anime-the-frames-of-emotion/</guid>
+				<guid>http://localhost:1313/posts/anime-the-frames-of-emotion/</guid>
 				<description>&lt;p&gt;Okay let&amp;rsquo;s talk about anime , even if anime is not ur cup of &lt;del&gt;tea&lt;/del&gt; coffee , pretend it is , just like when you fake interest around your relatives.&lt;/p&gt;&#xA;&lt;p&gt;So Anime ,  what a wonder full piece of content ever created , iam not gonna glaze the anime but imma say my view of it , so get comfortable and read it.&lt;/p&gt;&#xA;&lt;p&gt;lets start from how i got into it and y i like it , One random day i was walking in the terrace in a breezy night surfing the web in boredom and found a app in this sort of page that i dont remember and installed it.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Click ME !</title>
-				<link>https://nxrnoob.com/posts/first-post/</link>
+				<link>http://localhost:1313/posts/first-post/</link>
 				<pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
-				<guid>https://nxrnoob.com/posts/first-post/</guid>
+				<guid>http://localhost:1313/posts/first-post/</guid>
 				<description>&lt;p&gt;Thanks for visiting my site , stay tuned to see the upcoming posts ^_^&#xA;It wil soon turn from an about me page to an awesome informative hub i promise.&lt;/p&gt;</description>
 			</item>
 	</channel>
