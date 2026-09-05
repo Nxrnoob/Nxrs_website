@@ -66,7 +66,10 @@
         </div>
         {{ end }}
 
+        {{/* Spotify widget disabled: external API returns CORS/401. See FUTURE_SCOPES.md for the self-hosted replacement. */}}
+        {{/*
         <section id="spotify-now-playing" class="spotify-widget-wrapper"></section>
+        */}}
 
         <section class="homepage-section cbox-section">
             <h2>Talktuah</h2>
@@ -78,9 +81,11 @@
 </div>
 
 <!-- Include JS and CSS -->
+{{/*
 <script src="/js/now-playing.js" defer></script>
-<script src="/js/anime-quotes.js" defer></script>
 <link rel="stylesheet" href="/css/now-playing.css">
+*/}}
+<script src="/js/anime-quotes.js" defer></script>
 <link rel="stylesheet" href="/css/anime-quotes.css">
 
 <!-- 🌸 Sakura Animation -->
