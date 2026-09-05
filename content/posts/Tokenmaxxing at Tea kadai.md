@@ -1,9 +1,8 @@
 +++
-date = "2026-08-27"
-time = "16:34"
-tags = ["ai", "vibecoding"]
 title = "Tokenmaxxing at Tea kadai"
+date = "2026-08-27"
 type = "post"
+tags = ["ai", "vibecoding"]
 +++
 
 # Tokenmaxxing at Tea kadai
