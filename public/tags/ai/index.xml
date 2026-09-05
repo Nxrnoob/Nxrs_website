@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Tue, 05 May 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Thu, 27 Aug 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://nxrnoob.com/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Tokenmaxxing at Tea kadai</title>
+				<link>https://nxrnoob.com/posts/tokenmaxxing-at-tea-kadai/</link>
+				<pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>https://nxrnoob.com/posts/tokenmaxxing-at-tea-kadai/</guid>
+				<description>&lt;h1 id=&#34;tokenmaxxing-at-tea-kadai&#34;&gt;Tokenmaxxing at Tea kadai&lt;/h1&gt;&#xA;&lt;p&gt;Tea kadai vibe code setup - A vibecoding setup on your phone when you are outside your workspace&lt;/p&gt;&#xA;&lt;p&gt;You left your laptop for the tea break and agents are in mid task and u want to click &amp;ldquo;Approve changes&amp;rdquo; or type in your quick prompt so you fully max out your org&amp;rsquo;s claude sub plus you want to continue that in your phone without losing that Flow State and thats where this setup comes in.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>llm-instruction</title>
 				<link>https://nxrnoob.com/posts/llm-instruction/</link>
