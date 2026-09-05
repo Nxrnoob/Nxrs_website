@@ -1,0 +1,9 @@
+{{ $toc := .TableOfContents }}
+{{ $hasHeadings := gt (strings.Count "<a " $toc) 0 }}
+{{ if and (or (.Params.ShowTableOfContents) (and (eq .Type "post") (.Site.Params.ShowTableOfContents))) $hasHeadings }}
+<aside class="post-toc">
+    <nav id="toc">
+        {{ $toc }}
+    </nav>
+</aside>
+{{ end }}

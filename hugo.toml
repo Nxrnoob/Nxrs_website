@@ -4,6 +4,8 @@ title = 'Nxrnoob'
 theme = 'gokarna-hugo'
 [params]
   ShowThemeToggle = true
+  ShowTableOfContents = true
+  DisplayReadingTime = true
   description = "Hey there , Welcome to my digital realm! " # <-- Add your description text
   showPostsOnHomePage = "recent"
   numberPostsOnHomePage = 5
