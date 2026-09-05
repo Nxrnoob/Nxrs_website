@@ -1,0 +1,18 @@
+# Build output
+public/
+
+# Hugo internals
+.hugo_build.lock
+resources/
+
+# Local agent configs
+.agents/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor junk
+.vscode/
+.idea/
+*.swp

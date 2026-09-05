@@ -98,3 +98,12 @@ No package.json, Makefile, or task runner. All builds are plain `hugo` commands.
 ### Images
 
 Images referenced in content markdown use relative paths (`images/hello.png`) resolved against `static/`. Avatar is configured in `hugo.toml` as `avatarURL = "/images/avatar.jpg"` pointing to `static/images/avatar.jpg`. There is also an `images/` directory at root level containing `avatar.webp` and `hello.png` which are separate from `static/images/`.
+
+## Owner's Anime Taste (for theming / copy ideas)
+
+When the owner asks for an "anime touch" on UI, draw suggestions from this watchlist. The site's existing anime language: Serial Experiments Lain (Lain clock widget), sakura petals, anime quotes widget, purple `#cc00ff` accent.
+
+**Series:** Death Note, Code Geass, Darling in the Franxx, Chainsaw Man, Jujutsu Kaisen, My Dress-Up Darling (S2 remaining), Alya Sometimes Hides Her Feelings in Russian, Solo Leveling, Dandadan (S2 remaining), Naruto (unfinished), Attack on Titan, The Dangers in My Heart, Golden Time, ReLIFE, Re:Zero (waiting for new season), Rascal Does Not Dream of Bunny Girl Senpai, Violet Evergarden, Monster, Serial Experiments Lain, Kowloon Generic Romance, Neon Genesis Evangelion, Just Because!, Toradora!, Cyberpunk: Edgerunners, Erased, Cowboy Bebop, Terror in Resonance, Tokyo Ghoul, Horimiya.
+
+**Movies:** Your Name, Weathering with You, Jujutsu Kaisen 0, Violet Evergarden: The Movie, Rascal Does Not Dream of a Dreaming Girl, The End of Evangelion, Maquia: When the Promised Flower Blooms.
+
