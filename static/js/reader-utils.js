@@ -74,7 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
     copyText(window.location.href)
       .then(function () {
         copyBtn.innerHTML = ICON_CHECK;
-        copyBtn.classList.add("system-copied");
         copyBtn.setAttribute("aria-label", "Link copied");
       })
       .catch(function () {
@@ -84,7 +83,6 @@ document.addEventListener("DOMContentLoaded", function () {
         clearTimeout(revertTimer);
         revertTimer = setTimeout(function () {
           copyBtn.innerHTML = ICON_LINK;
-          copyBtn.classList.remove("system-copied");
           copyBtn.setAttribute("aria-label", "Copy page link");
         }, RESET_MS);
       });

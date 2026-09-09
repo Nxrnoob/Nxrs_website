@@ -151,15 +151,9 @@ document.addEventListener("DOMContentLoaded", function () {
     copyText(currentText)
       .then(function () {
         btn.innerHTML =
-          '<span class="sys-label">System</span>' +
-          '<span class="sys-msg">「 COPIED +1 」</span>';
-        btn.classList.add("system-copied");
+          ICON_CHECK + '<span class="copy-selection-label">Copied</span>';
+        btn.classList.add("copied");
         btn.setAttribute("aria-label", "Copied");
-        if (hasPointer) {
-          positionAtCursor();
-        } else if (lastRect) {
-          positionAtSelection(lastRect);
-        }
       })
       .catch(function () {
         btn.innerHTML =
@@ -171,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
         hideTimer = setTimeout(function () {
           btn.innerHTML =
             ICON_COPY + '<span class="copy-selection-label">Copy</span>';
-          btn.classList.remove("copied", "system-copied");
+          btn.classList.remove("copied");
           btn.setAttribute("aria-label", "Copy selected text");
           hide();
         }, RESET_MS);
