@@ -6,25 +6,24 @@ title = "Tokenmaxxing at Tea kadai"
 type = "post"
 +++
 
-# Tokenmaxxing at Tea kadai
 Tea kadai vibe code setup - A vibecoding setup on your phone when you are outside your workspace
 
-You left your laptop for the tea break and agents are in mid task and u want to click "Approve changes" or type in your quick prompt so you fully max out your org's claude sub plus you want to continue that in your phone without losing that Flow State that you have and thats where this setup comes in.
+You left your laptop for the tea break and agents are in mid task and u want to click "Approve changes" or type in your quick prompt so you fully max out your org's sweet claude sub plus you want to continue that in your phone without losing that Flow State that you have and thats where this setup comes in.
 
 We solve this problem using Tmux+Tailscale+Ssh and this setup works for any AI coding harness that runs in cli as we will literally use our laptop's terminal in our phone 
 
 ---
 
-### Required things to brew this greatness
+## Required things to brew this greatness
 1. pc/laptop where the AI coding harness is running
 2. Mobile with termux installed (pro tip: if you are in mcdonalds they ll always have one windows ordering machine that wont work and shows the entire desktop with touch support so you can leverage that too, your welcome)
 3. Tailscale account , click [HERE](https://login.tailscale.com/start) to create one
 4. Bit of brain to read this post and put it all together (you can also paste this entire content to ur llm and it might do half of the stuff correctly or will give you entirely ctrl c and ctrl v steps)
 ---
-### Setup part 
+## Setup part 
 #### In PC
 - install [tailscale](https://tailscale.com/docs/install) in your pc according to your operating system and follow their instructions for the setup as i only provided for linux os.
-###### Setup Instructions Below is for linux users (ignore this if you dont use linux)
+#### Setup Instructions Below is for linux users (ignore this if you dont use linux)
 - Install these first ````sudo pacman -S tailscale tmux openssh````
 - Enable sshd service so your phone can connect -> ````sudo systemctl enable --now sshd````
 - To enable tailscale -> ````sudo systemctl enable --now tailscaled````
