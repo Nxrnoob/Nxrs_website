@@ -4,6 +4,7 @@ time = "16:34"
 tags = ["ai", "vibecoding"]
 title = "Tokenmaxxing at Tea kadai"
 type = "post"
+image = "/images/p7_soap.jpg"
 +++
 
 Tea kadai vibe code setup - A vibecoding setup on your phone when you are outside your workspace
