@@ -1,6 +1,3 @@
-# Build output
-public/
-
 # Hugo internals
 .hugo_build.lock
 resources/
