@@ -91,6 +91,15 @@ Dark mode uses the gokarna theme's toggle plus `pitch-black-darkmode.js` which a
 
 The gokarna-hugo theme is a git submodule, not vendored. After any theme update, test the build since custom layouts override theme templates and may break on upstream changes.
 
+### Deploy Serves the Committed `public/` Folder (critical gotcha)
+
+Production (Vercel) serves the **committed `public/` directory as-is**; it does not build from source. Consequences:
+
+- After any change to templates or `static/` assets, run `hugo --gc --minify` and commit the regenerated `public/` files, or prod won't change.
+- The `.gitignore` contains `public/`, which silently blocks **new** untracked files under `public/` from being committed (`git add public/` skips them; already-tracked files still commit fine). When a new static asset or feature file is added, force-add it: `git add -f public/css public/js`, else prod 404s on the missing assets while local looks fine.
+- Bug signature: features work locally via `hugo server` but are missing in prod, and `public/index.html` references assets that aren't in the pushed tree (verify with `git ls-tree origin/master public/js/`).
+- `hugo server` writes dev output (with `localhost:1313` URLs) into `public/` by default. Never commit `public/` straight after a dev session - rebuild with `hugo --gc --minify` first, or prod canonical/OG/RSS/sitemap URLs will point at localhost.
+
 ### No Build Tooling
 
 No package.json, Makefile, or task runner. All builds are plain `hugo` commands. No linting, formatting, or test infrastructure exists.
