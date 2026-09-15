@@ -52,9 +52,7 @@ We solve this problem using Tmux+Tailscale+Ssh and this setup works for any AI c
 
 ## Sum Screenshots
 
-![image that uve successfully steup tailscale](/images/ts_mob.jpeg)
-
-![remote opencode running in termux](/images/oc_mob.png)
+![image that uve successfully steup tailscale](/images/oc_tc_mob.png)
 
 ---
 ## Conclusion
